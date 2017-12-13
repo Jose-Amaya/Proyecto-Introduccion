@@ -51,6 +51,10 @@ try:
         updatedata() ## Se lee la informacion del archivo de texto, y se actualiza matrix de acuerdo a lo que se lea
         updateleds() ## Actualizar los leds de acuerdo a la informacion de matrix
 
+except KeyboardInterrupt:
+    allofon() ## Apagar la matriz
+    GPIO.cleanup() ## Devolver los pines a su estado original para que puedan ser usados por otro programa
+
 finally: ## Al cerrar el programa de manera manual
     allofon() ## Apagar la matriz
     GPIO.cleanup() ## Devolver los pines a su estado original para que puedan ser usados por otro programa
