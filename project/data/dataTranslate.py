@@ -10,7 +10,8 @@ cs = ["E1","T1" ,"T1.1" ,"T1.4" ,"T2" ,"T3" ,"T3.11" ,"T3.21" ,"T4" ,"T4.1" ,"T4
 eq = {"E1": "MJEPIRAC" , "T1" : "None" ,"T1.1" : "FLORES1" ,"T1.4" : "FLORES IV" ,"T2" : "TEBSA" , "T3" : "None" ,"T3.11" : "GUAJIR11" ,"T3.21" : "GUAJIR21" , "T4" : "None" ,"T4.1" : "TASAJER1" ,"T4.2" : "TASAJERO2" ,"T5" : "TSIERRA" ,"T6" : "TEMCALI" , "T7" : "None" ,"T7.1" : "PAIPA1" ,"T7.2" : "PAIPA2" ,"T7.3" : "PAIPA3" ,"T7.4" : "PAIPA4" ,"T8" : "TCENTRO1" , "T9" : "None" ,"T9.2" : "ZIPAEMG2" ,"T9.3" : "ZIPAEMG3" ,"T9.4" : "ZIPAEMG4" ,"T9.5" : "ZIPAEMG5" , "T10" : "None" ,"T10.1" : "CTGEMG1" ,"T10.2" : "CTGEMG2" ,"T10.3" : "CTGEMG3" , "T11" : "MERILEC1" ,"H1" : "LAHERRADURA" ,"H2" : "JAGUAS" ,"H3" : "CSANCARLOS" ,"H4" : "SOGAMOSO" ,"H5" : "AMOYA" ,"H6" : "MIEL1" ,"H7" : "MCALDERAS" ,"H8" : "GUAVIO" ,"H9" : "BETANIA" ,"H10" : "ELQUIMBO" ,"H11" : "PAGUA PARAISO" ,"H12" : "PAGUA GUACA" ,"H13" : "MTEQUENDAMA" ,"H14" : "LATASAJERA" ,"H15" : "MCARACOLI" ,"H16" : "MLIMONAR" ,"H17" : "DARIOVS" ,"H18" : "MLAGUNETA" ,"H19" : "MPAJARITO" ,"H20" : "MSNJOSE_MONT" ,"H21" : "GUATRON" ,"H22" : "404 GUADALUPE3" ,"H23" : "404 GUADALUPE4" ,"H24" : "PORCE2" ,"H25" : "PORCE3" ,"H26" : "GUATAPE" ,"H27" : "MRIOABAJO" ,"H28" : "MSONSON" ,"H29" : "MRFRIOTAMES" ,"H30" : "M_AYURA" ,"H31" : "MNIQUIA" ,"H32" : "URRA" ,"H33" : "CHIVOR" ,"H34" : "CUCUANA" ,"H35" : "CALIMA1" }
 ## Lista de centrales (sin excepciones, nombres que aparecen en XM en Despacho nacional (# significa que hay varios datos y se sumaron))
 loc = ['MJEPIRAC', 'FLORES#', 'TEBSA', 'GUAJIR#', 'TASAJER##', 'TSIERRA', 'TEMCALI', 'PAIPA#', 'TCENTRO1', 'ZIPAEMG#', 'CTGEMG#', 'MERILEC1', 'LAHERRADURA', 'JAGUAS', 'CSANCARLOS', 'SOGAMOSO', 'AMOYA', 'MIEL1', 'MCALDERAS', 'GUAVIO', 'BETANIA', 'ELQUIMBO', 'PAGUA PARAISO', 'PAGUA GUACA', 'MTEQUENDAMA', 'LATASAJERA', 'MCARACOLI', 'MLIMONAR', 'DARIOVS', 'MLAGUNETA', 'MPAJARITO', 'MSNJOSE_MONT', 'GUATRON', '404 GUADALUPE3', '404 GUADALUPE4', 'PORCE2', 'PORCE3', 'GUATAPE', 'MRIOABAJO', 'MSONSON', 'MRFRIOTAMES', 'M_AYURA', 'MNIQUIA', 'URRA', 'CHIVOR', 'CUCUANA', 'CALIMA1']
-
+## Lista de centrales con nombres arbitrarios
+genName = [ "JEPIRACHI1-15" , "FLORES" , "BARRANQUILLA" , "GUAJIRA" , "TASAJERO" , "TERMOSIERRAB" , "TERMOEMCALI1" , "PAIPA" , "TERMOCENTROCC" , "ZIPAEMG" , "CARTAGENA" , "MERILECTRICA1" , "LAHERRADURA" , "JAGUAS" , "SANCARLOS" , "SOGAMOSO" , "AMOYALAESPERANZA" , "MIELI" , "CALDERAS" , "GUAVIO" , "BETANIA" , "ELQUIMBO" , "PARAISO" , "LAGUACA", "TEQUENDAMA" , "LATASAJERA" , "CARACOLI" , "ELLIMONAR" , "DARIOVALENCIASAMPER" , "LAGUNETA" , "PAJARITO" , "SANJOSEDELAMONTAÑA" , "TRONERAS" , "GUADALUPE3" , "GUADALUPE4" , "PORCEII" , "PORCEIII" , "GUATAPE" , "RIOABAJO" , "SONSON" , "RIOFRIO(TAMESIS)" , "AYURA" , "NIQUIA" , "URRA1" , "CHIVOR" , "CUCUANA" , "CALIMA" ]
 
 ## en el diccionario Centrales se guardara toda la informacion
 global Centrales
@@ -115,6 +116,12 @@ def translateData(): ## Funcion "traducir informacion" actualiza el diccionario 
 
             Centrales.update({"CTGEMG#": matr})
 
+    return Centrales
+
+def translateDataGen(): ## Funcion "traducir informacion" pero con nombres generales (arbitrarios)
+    Centrales=translateData()
+    for x in range(0,len(loc)):
+        Centrales.update({genName[x] : Centrales.pop(loc[x])})
     return Centrales
 
 def uhour(): ## Esta funcion va a devolver una matriz con los datos de generacion de una planta para la respectiva hora (en 8 listas de 8 componentes)
