@@ -13,6 +13,7 @@ loc = ['MJEPIRAC', 'FLORES#', 'TEBSA', 'GUAJIR#', 'TASAJER##', 'TSIERRA', 'TEMCA
 ## Lista de centrales con nombres arbitrarios
 genName = [ "JEPIRACHI1-15" , "FLORES" , "BARRANQUILLA" , "GUAJIRA" , "TASAJERO" , "TERMOSIERRAB" , "TERMOEMCALI1" , "PAIPA" , "TERMOCENTROCC" , "ZIPAEMG" , "CARTAGENA" , "MERILECTRICA1" , "LAHERRADURA" , "JAGUAS" , "SANCARLOS" , "SOGAMOSO" , "AMOYALAESPERANZA" , "MIELI" , "CALDERAS" , "GUAVIO" , "BETANIA" , "ELQUIMBO" , "PARAISO" , "LAGUACA", "TEQUENDAMA" , "LATASAJERA" , "CARACOLI" , "ELLIMONAR" , "DARIOVALENCIASAMPER" , "LAGUNETA" , "PAJARITO" , "SANJOSEDELAMONTAÑA" , "TRONERAS" , "GUADALUPE3" , "GUADALUPE4" , "PORCEII" , "PORCEIII" , "GUATAPE" , "RIOABAJO" , "SONSON" , "RIOFRIO(TAMESIS)" , "AYURA" , "NIQUIA" , "URRA1" , "CHIVOR" , "CUCUANA" , "CALIMA" ]
 
+
 ## en el diccionario Centrales se guardara toda la informacion
 global Centrales
 Centrales = {}
@@ -51,12 +52,19 @@ def matrixMake(Central): ## Funcion que devolvera una matriz con los valores de 
 def translateData(): ## Funcion "traducir informacion" actualiza el diccionario Centrales, y lo devuelve, cada central con sus datos para 24 horas
     for x in cs: ## para cada elemento de cs, es decir, cada central
     
-        if ( eq[x] is not "None" ) and ( "." not in x ): ## Si el nombre de XM no es "None" (Excepciones) y ademas la key no tiene un punto (si tiene punto es una excepcion)
+        if ( eq[x] is not "None" ) and ( "." not in x ) and ( eq[x].find("PAGUA") is -1 ): ## Si el nombre de XM no es "None" (Excepciones) y ademas la key no tiene un punto (si tiene punto es una excepcion)
 
             Centrales.update({eq[x]:matrixMake(eq[x])}) ## Actualizar el diccionario Centrales, agregando el nombre de la central, y su matriz
 
        ## Excepciones, centrales para las cuales hay mas de una matriz, sumar las matrices y despues agregar el nombre de excel al diccionario con la matriz resultante
     
+        elif eq[x].find("PAGUA") is not -1:
+
+            if eq[x] == "PAGUA PARAISO":
+                Centrales.update({eq[x]:matrixMake("PAGUA")})
+            else:
+                Centrales.update({eq[x]:matrixMake("PAGUA")})
+
         elif x == "T1": ## T1 Flores
 
             mat1 = matrixMake(eq["T1.1"])
@@ -130,8 +138,9 @@ def uhour(): ## Esta funcion va a devolver una matriz con los datos de generacio
     matrix = [[0]*8 for x in range(0,8)] ## Matriz que va a ser actualizada y guardada en el archivo que lee matS.py
     for x in range(0,8):
         for y in range(0,8):
-            if (y + x*8) < len(Centrales):
-                matrix[x][y] = Centrales[loc[y + x*8]][hr]
+            place = y + x*8
+            if place < len(loc):
+                matrix[x][y] = Centrales[loc[place]][hr]
             else:
                 matrix[x][y] = 0
     return (matrix)
