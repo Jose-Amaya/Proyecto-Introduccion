@@ -118,7 +118,7 @@ def translateData(): ## Funcion "traducir informacion" actualiza el diccionario 
             Centrales.update({"CTGEMG#": matr})
     return Centrales
 
-def uhour(): ## Esta funcion va a devolver una matriz con los datos de generacion de una planta para la respectiva hora
+def uhour(): ## Esta funcion va a devolver una matriz con los datos de generacion de una planta para la respectiva hora (en 8 listas de 8 componentes)
     translateData() ## Actualizar el diccionario Centrales
     hr = datetime.datetime.today().hour ## Hora del dia
     matrix = [[0]*8 for x in range(0,8)] ## Matriz que va a ser actualizada y guardada en el archivo que lee matS.py
@@ -130,10 +130,10 @@ def uhour(): ## Esta funcion va a devolver una matriz con los datos de generacio
                 matrix[x][y] = 0
     return (matrix)
 
-def uhourCents(): ## Esta funcion va a devolver una matriz con los datos de generacion de una planta para la respectiva hora
+def uhourCents(): ## Esta funcion va a devolver una lista con los datos de generacion de una planta para la respectiva hora
     translateData() ## Actualizar el diccionario Centrales
     hr = datetime.datetime.today().hour ## Hora del dia
-    matrix = [0]*len(loc) ## Matriz que va a ser actualizada y guardada en el archivo que lee matS.py
+    matrix = [0]*len(loc) ## Matrix que va a ser usada por infoWeb.py
     for x in range(0,len(loc)):
         matrix[x] = Centrales[loc[x]][hr]
     return (matrix)
@@ -149,9 +149,6 @@ def actualMat(): ## Funcion que devuelve la informacion para poner en el archivo
                 matS[x][y] = 1
     return(matS)
 
-def actualMata(): ## Funcion que escribe la informacipn dada por actualMat en el archivo que lee matS.py
+def actualMata(): ## Funcion que escribe la informacion dada por actualMat en el archivo que lee matS.py
     file2 = open("./files/matSdata.txt", "w")
     file2.write(str(actualMat()))
-
-translateData()
-print (Centrales)
