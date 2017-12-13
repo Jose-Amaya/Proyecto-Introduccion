@@ -1,6 +1,6 @@
 
 # coding: utf-8
-
+# Este programa actualiza un archivo de texto, con tantas filas como centrales, y cada fila con 24 numeros, siendo 1s o 0s, definiendo el estado de la central para las 24 horas
 # In[1]:
 
 

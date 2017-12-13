@@ -31,5 +31,3 @@ def updateData():
     if data.find('"page-not-found.aspx?404') == -1:
         file = open("./files/downData.txt", "w")
         file.write(data)
-
-updateData()
