@@ -5,8 +5,9 @@
     "\\project\\data",
     "\\project\\data\\files",
     "\\project\\data\\OfertaInicial (Alternativa)",
-    "\\project\\data\\OfertaInicial (Alternativa)\\files"
+    "\\project\\data\\OfertaInicial (Alternativa)\\files",
+    "\\testing"
   ],
-  "SelectedNode": "\\project\\data\\OfertaInicial (Alternativa)\\files\\infoWebO.txt",
+  "SelectedNode": "\\project\\data\\dataTranslate.py",
   "PreviewInSolutionExplorer": false
 }
