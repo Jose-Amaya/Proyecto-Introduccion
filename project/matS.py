@@ -22,7 +22,7 @@ column = [8,10,12,16,18,22,24,26] ## Pines que van a controlar el voltaje que ll
 #### Para la matrix real
 
 row = [18, 22, 24, 26, 32, 36, 38, 40] # rojo en brd PCB P8 -> P1
-column = [11, 7, 5, 3, 8, 7, 6, 5] # azul en brd PCB BN pins
+column = [11, 7, 5, 3, 37, 35, 33, 31] # azul en brd PCB BN pins
 
 """
 
@@ -44,7 +44,7 @@ try:
     """
     #### Para la matriz real
 
-    def alloff(): ## Se define una funcion, que va a apagar toda la matriz
+    def allofon(): ## Se define una funcion, que va a apagar toda la matriz
         for i in row:
             GPIO.output(i, False)
         for x in column:
