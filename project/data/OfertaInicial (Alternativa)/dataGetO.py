@@ -1,3 +1,5 @@
+## CHECK PATH
+
 import datetime
 import time
 import pycurl

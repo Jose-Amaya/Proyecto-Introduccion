@@ -1,3 +1,5 @@
+## CHECK PATH
+
 import time # Para esperar un tiempo especifico
 import datetime # Para saber la hora
 import ast # Para transformar la lista de numeros en una matriz
@@ -11,37 +13,11 @@ genName = [ "JEPIRACHI1-15" , "FLORES" , "BARRANQUILLA" , "GUAJIRA" , "TASAJERO"
 ## Variable que define el tipo de información que se adquiere
 info = " , D,  "
 
-## Centrales que tienen multiples datos
-FLORES = ["FLORES1" , "FLORES4B"]
-BARRANQUILLA = ["BARRANQUILLA3" , "BARRANQUILLA4"]
-GUAJIRA = ["GUAJIRA1" , "GUAJIRA2"]
-TASAJERO = ["TASAJERO1" , "TASAJERO2"]
-PAIPA = ["PAIPA1" , "PAIPA2" , "PAIPA3" , "PAIPA4"]
-ZIPAEMG = ["ZIPAEMG2" , "ZIPAEMG3" , "ZIPAEMG4" , "ZIPAEMG5"]
-CARTAGENA = ["CARTAGENA1" , "CARTAGENA2" , "CARTAGENA3"]
-LAHERRADURA = ["LAHERRADURA1" , "LAHERRADURA2"]
-JAGUAS = ["JAGUAS1" , "JAGUAS2"]
-SANCARLOS = ["SANCARLOS1" , "SANCARLOS2" , "SANCARLOS3" , "SANCARLOS4" , "SANCARLOS5" , "SANCARLOS6" , "SANCARLOS7" , "SANCARLOS8"]
-SOGAMOSO = ["SOGAMOSO1" , "SOGAMOSO2" , "SOGAMOSO3"]
-AMOYALAESPERANZA = ["AMOYALAESPERANZA1" , "AMOYALAESPERANZA2"]
-MIELI = ["MIELI1" , "MIELI2" , "MIELI3"]
-CALDERAS = ["CALDERAS1" , "CALDERAS2"]
-GUAVIO = ["GUAVIO1" , "GUAVIO2" , "GUAVIO3" , "GUAVIO4" , "GUAVIO5"]
-BETANIA = ["BETANIA1" , "BETANIA2" , "BETANIA3"]
-ELQUIMBO = ["ELQUIMBO1" , "ELQUIMBO2"]
-PARAISO = ["PARAISO1" , "PARAISO2" , "PARAISO3"]
-LAGUACA = ["LAGUACA1" , "LAGUACA2" , "LAGUACA3"]
-LATASAJERA = ["LATASAJERA1" , "LATASAJERA2" , "LATASAJERA3"]
-DARIOVALENCIASAMPER = ["DARIOVALENCIASAMPER1" , "DARIOVALENCIASAMPER2" , "DARIOVALENCIASAMPER5"]
-TRONERAS = ["TRONERAS1" , "TRONERAS2"]
-GUADALUPE3 = ["GUADALUPE31" , "GUADALUPE32" , "GUADALUPE33" , "GUADALUPE34" , "GUADALUPE35" , "GUADALUPE36"]
-GUADALUPE4 = ["GUADALUPE41" , "GUADALUPE42" , "GUADALUPE43"]
-PORCEII = ["PORCEII1" , "PORCEII2" , "PORCEII3"]
-PORCEIII = ["PORCEIII4" , "PORCEIII3" , "PORCEIII2" , "PORCEIII1"]
-GUATAPE = ["GUATAPE1" , "GUATAPE2" , "GUATAPE3" , "GUATAPE4" , "GUATAPE5" , "GUATAPE6" , "GUATAPE7" , "GUATAPE8"]
-CHIVOR = ["CHIVOR1" , "CHIVOR2" , "CHIVOR3" , "CHIVOR4" , "CHIVOR5" , "CHIVOR6" , "CHIVOR7" , "CHIVOR8"]
-CUCUANA = ["CUCUANA1" , "CUCUANA2"]
-CALIMA = ["CALIMA1" , "CALIMA2" , "CALIMA3" , "CALIMA4"]
+## Diccionario con centrales que tienen multiples datos
+multDataDict = {"FLORES" : ["FLORES1" , "FLORES4B"] , "BARRANQUILLA" : ["BARRANQUILLA3" , "BARRANQUILLA4" , "TEBSAB"] , "GUAJIRA" : ["GUAJIRA1" , "GUAJIRA2"] , "TASAJERO" : ["TASAJERO1" , "TASAJERO2"] , "PAIPA" : ["PAIPA1" , "PAIPA2" , "PAIPA3" , "PAIPA4"] , "ZIPAEMG" : ["ZIPAEMG2" , "ZIPAEMG3" , "ZIPAEMG4" , "ZIPAEMG5"] , "CARTAGENA" : ["CARTAGENA1" , "CARTAGENA2" , "CARTAGENA3"] , "LAHERRADURA" : ["LAHERRADURA1" , "LAHERRADURA2"] , "JAGUAS" : ["JAGUAS1" , "JAGUAS2"] , "SANCARLOS" : ["SANCARLOS1" , "SANCARLOS2" , "SANCARLOS3" , "SANCARLOS4" , "SANCARLOS5" , "SANCARLOS6" , "SANCARLOS7" , "SANCARLOS8"] , "SOGAMOSO" : ["SOGAMOSO1" , "SOGAMOSO2" , "SOGAMOSO3"] , "AMOYALAESPERANZA" : ["AMOYALAESPERANZA1" , "AMOYALAESPERANZA2"] , "MIELI" : ["MIELI1" , "MIELI2" , "MIELI3"] , "CALDERAS" : ["CALDERAS1" , "CALDERAS2"] , "GUAVIO" : ["GUAVIO1" , "GUAVIO2" , "GUAVIO3" , "GUAVIO4" , "GUAVIO5"] , "BETANIA" : ["BETANIA1" , "BETANIA2" , "BETANIA3"] , "ELQUIMBO" : ["ELQUIMBO1" , "ELQUIMBO2"] , "PARAISO" : ["PARAISO1" , "PARAISO2" , "PARAISO3"] , "LAGUACA" : ["LAGUACA1" , "LAGUACA2" , "LAGUACA3"] , "LATASAJERA" : ["LATASAJERA1" , "LATASAJERA2" , "LATASAJERA3"] , "DARIOVALENCIASAMPER" : ["DARIOVALENCIASAMPER1" , "DARIOVALENCIASAMPER2" , "DARIOVALENCIASAMPER5"] , "TRONERAS" : ["TRONERAS1" , "TRONERAS2"] , "GUADALUPE3" : ["GUADALUPE31" , "GUADALUPE32" , "GUADALUPE33" , "GUADALUPE34" , "GUADALUPE35" , "GUADALUPE36"] , "GUADALUPE4" : ["GUADALUPE41" , "GUADALUPE42" , "GUADALUPE43"] , "PORCEII" : ["PORCEII1" , "PORCEII2" , "PORCEII3"] , "PORCEIII" : ["PORCEIII4" , "PORCEIII3" , "PORCEIII2" , "PORCEIII1"] , "GUATAPE" : ["GUATAPE1" , "GUATAPE2" , "GUATAPE3" , "GUATAPE4" , "GUATAPE5" , "GUATAPE6" , "GUATAPE7" , "GUATAPE8"] , "CHIVOR" : ["CHIVOR1" , "CHIVOR2" , "CHIVOR3" , "CHIVOR4" , "CHIVOR5" , "CHIVOR6" , "CHIVOR7" , "CHIVOR8"] , "CUCUANA" : ["CUCUANA1" , "CUCUANA2"] , "CALIMA" : ["CALIMA1" , "CALIMA2" , "CALIMA3" , "CALIMA4"]}
+## lista de centrales con multiples datos
+multDataList = ["FLORES" , "BARRANQUILLA" , "GUAJIRA" , "TASAJERO" , "PAIPA" , "ZIPAEMG" , "CARTAGENA" , "LAHERRADURA" , "JAGUAS" , "SANCARLOS" , "SOGAMOSO" , "AMOYALAESPERANZA" , "MIELI" , "CALDERAS" , "GUAVIO" , "BETANIA" , "ELQUIMBO" , "PARAISO" , "LAGUACA" , "LATASAJERA" , "DARIOVALENCIASAMPER" , "TRONERAS" , "GUADALUPE3" , "GUADALUPE4" , "PORCEII" , "PORCEIII" , "GUATAPE" , "CHIVOR" , "CUCUANA" , "CALIMA"]
+
 
 ## en el diccionario Centrales se guardara toda la informacion (con nombres arbitrarios), en CentralesN se guardaran con el número
 global Centrales,CentralesN
@@ -82,14 +58,20 @@ def translateData(): ## Funcion "traducir informacion" actualiza el diccionario 
 
     return CentralesN
 
+def updateCentrales(): ## Funcion que actualizara el diccionario centrales, sumando la informacion de las diferentes matrices para las centrales que tienen mas de 1
+    Centrales = translateData()
+    for x in multDataList:
+        Centrales.update({ x : matAdd( *[Centrales.pop(multDataDict[x][i]) for i in range(0,len(multDataDict[x]))] ) }) ## sumar las matrices de x central, retirarlas del diccionario, y agregar la suma con el nombre general
+    return Centrales
+
 def uhour(): ## Esta funcion va a devolver una matriz con los datos de generacion de una planta para la respectiva hora
-    translateData() ## Actualizar el diccionario Centrales
+    Centrales = updateCentrales() ## Actualizar el diccionario Centrales
     hr = datetime.datetime.today().hour ## Hora del dia
     matrix = [[0]*8 for x in range(0,8)] ## Matriz que va a ser actualizada y guardada en el archivo que lee matS.py
     for x in range(0,8):
         for y in range(0,8):
             if (y + x*8) < len(Centrales):
-                matrix[x][y] = Centrales[loc[y + x*8]][hr]
+                matrix[x][y] = Centrales[genName[y + x*8]][hr]
             else:
                 matrix[x][y] = 0
     return (matrix)
@@ -108,6 +90,3 @@ def actualMat(): ## Funcion que devuelve la informacion para poner en el archivo
 def actualMata(): ## Funcion que escribe la informacipn dada por actualMat en el archivo que lee matS.py
     file2 = open("./files/matSdataO.txt", "w")
     file2.write(str(actualMat()))
-
-translateData()
-print (CentralesN)

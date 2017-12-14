@@ -1,3 +1,5 @@
+## CHECK PATH /home/pi/project/data/files/downData.txt
+
 import datetime
 import time
 import pycurl

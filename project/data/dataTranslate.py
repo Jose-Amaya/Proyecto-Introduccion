@@ -1,4 +1,4 @@
-## CHECK PATH
+## CHECK PATH matrixMage() /home/pi/project/data/files/downData.txt actualMata() /home/pi/project/data/files/matSdata.txt
 
 import time # Para esperar un tiempo especifico
 import datetime # Para saber la hora

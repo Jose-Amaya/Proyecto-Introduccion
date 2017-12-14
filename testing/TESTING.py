@@ -1,7 +1,7 @@
 import random
 file = open ("testing.txt")
 global string
-string = "[ "
+string = ""
 """
 length = (len(file.readlines()))
 file = open ("testing.txt")
@@ -20,7 +20,7 @@ for x in file:
 file = open ("testing.txt", "w")
 file.write(string)
 """
-
+"""
 matrix = [[0]*8 for x in range(0,8)]
 for x in range(0,8):
     for y in range(0,8):
@@ -48,3 +48,10 @@ def from88to87mat(mat): ## Transforma la matriz de entrada 8*8 a una matriz de 8
 print (matrix)
 print ("\n")
 print (from88to87mat(matrix))
+"""
+string = ""
+for x in file:
+    string = string + x.replace("\n", " , ")
+
+file = open ("testing.txt", "w")
+file.write(string)

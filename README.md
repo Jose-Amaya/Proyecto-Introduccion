@@ -1,4 +1,7 @@
 # Proyecto-Introduccion
+
+Los archivos principales se encuentran en la carpeta "project"
+
 Control de una matriz de LEDs de acuerdo a información obtenida de www.xm.com.co
 
 Se ejecutarán matS.py (que actualiza el estado de cada led) y dataUpdater.py (que se encarga de correr los programas para actualizar la información) en paralelo con:
