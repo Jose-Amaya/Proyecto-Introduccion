@@ -111,7 +111,7 @@ try:
 
         """
         #### para datos de OfertaInicial:
-        file = open ("/home/pi/project/data/OfertaInicial (Alternativa)/files/matSdata.txt","r")
+        file = open ("/home/pi/project/data/OfertaInicial (Alternativa)/files/matSdataO.txt","r")
 
         """
         placeHolder = file.read() ## Una variable, llamada placeHolder, sera igual a los datos que tenga el archivo de texto
