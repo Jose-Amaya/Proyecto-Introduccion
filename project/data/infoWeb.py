@@ -1,3 +1,5 @@
+## CHECK PATH
+
 # Este programa actualizara un archivo con los datos de las centrales
 from dataTranslate import uhourCents ## Importar la funcion que dara la información sobre todas las centrales
 

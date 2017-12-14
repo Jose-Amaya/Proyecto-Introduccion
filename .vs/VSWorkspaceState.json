@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\project"
+    "\\project",
+    "\\project\\data",
+    "\\project\\data\\files",
+    "\\project\\data\\OfertaInicial\\files",
+    "\\testing"
   ],
-  "SelectedNode": "\\project\\matS.py",
+  "SelectedNode": "\\Centrales (Con oferta inicial).xlsx",
   "PreviewInSolutionExplorer": false
 }

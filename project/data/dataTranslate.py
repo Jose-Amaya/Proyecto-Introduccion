@@ -1,3 +1,5 @@
+## CHECK PATH
+
 import time # Para esperar un tiempo especifico
 import datetime # Para saber la hora
 import ast # Para transformar la lista de numeros en una matriz
