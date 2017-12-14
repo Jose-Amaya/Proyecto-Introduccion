@@ -13,3 +13,37 @@ sudo python3 /pathToProject/data/dataUpdater.py &
 sudo python3 /pathToProject/matS.py &
 
 Se agregarán estas dos lineas al final de /etc/profile en la raspberry para que se ejecuten al encender la raspberry
+
+## Información de los archivos
+
+### Centrales * .xlsx
+
+Contienen una lista con las centrales, y la información de XM, la diferencia entre los dos archivos es que el archivo "(Con oferta inicial)" contiene información sobre las centrales para los archivos de Oferta inicial
+
+## Project
+
+Es la carpeta que va en /home/pi de la raspberry
+
+### matS.py
+
+Programa que actualiza la matriz de LEDs basado en los datos que se encuentran en ./data/files/matSdata.txt
+
+### infoWeb.py
+
+Programa que actualiza el archivo ./data/files/infoWeb.txt ; en cada linea se muestra la informacion de la central para la hora actual, el orden es el mismo que en los archivos Centrales * .xlsx
+
+### dataUpdater.py
+
+Se encarga de correr las funciones de los diferentes programas en ./data , así se evita que dos programas traten de editar un archivo al mismo tiempo, este prorama se corre en paralelo con matS.py
+
+### dataTranslate.py
+
+se encarga de tomar la información descargada en ./files/downData.txt ; tiene diferentes funciones hechas para acceder mas facilmente a la informacion
+
+## OfertaInicial (Alternativa)
+
+Si se desean usar los datos de Oferta inicial, y no los de Despacho nacional, se corre, de este archivo dataUpdaterO.py, y se actualiza matS.py
+
+# PATH
+
+Al pasar a la raspberry pi, actualizar los archivos dataGet , dataTranslate , infoWeb y matS con la direccion de la carpeta

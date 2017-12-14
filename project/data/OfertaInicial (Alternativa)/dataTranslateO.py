@@ -1,4 +1,6 @@
-## CHECK PATH matrixMage() /home/pi/project/data/OfertaInicial (Alternativa)/files/downData.txt actualMata() /home/pi/project/data/OfertaInicial (Alternativa)/files/matSdata.txt
+## CHECK PATH
+path = "./files/" ## For windows (VS)
+## path = "/home/pi/project/data/OfertaInicial (Alternativa)/files/" ## For raspberry
 
 import time # Para esperar un tiempo especifico
 import datetime # Para saber la hora
@@ -35,11 +37,11 @@ def matAdd(*args): ## Funcion para sumar matrices
 
 def matrixMake(Central): ## Funcion que devolvera una matriz con los valores de generacion para cada central
 
-    file = open("./files/downDataO.txt") ## Se abre el archivo downData.txt donde esta la informacion para el dia de hoy
+    file = open(path + "downDataO.txt") ## Se abre el archivo downData.txt donde esta la informacion para el dia de hoy
     data = file.read() ## Se lee
 
     if len(data) is not 0: ## Si el archivo data.txt no ha sido abierto por otro programa...
-        file = open("./files/downDataO.txt") ## Abrir el archivo (al ejecutar el metodo .read() el archivo se cierra)
+        file = open(path + "downDataO.txt") ## Abrir el archivo (al ejecutar el metodo .read() el archivo se cierra)
         matrix = [] ## Se define una matriz vacia donde se guardaran los valores
         matrixString = "" ## Se define una cadena de caracteres, vacia, donde se guardara la informacion de la central
 
@@ -96,5 +98,5 @@ def actualMat(): ## Funcion que devuelve la informacion para poner en el archivo
     return(matS)
 
 def actualMata(): ## Funcion que escribe la informacipn dada por actualMat en el archivo que lee matS.py
-    file2 = open("./files/matSdataO.txt", "w")
+    file2 = open(path + "matSdataO.txt", "w")
     file2.write(str(actualMat()))

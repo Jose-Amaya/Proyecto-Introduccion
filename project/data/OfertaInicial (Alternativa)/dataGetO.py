@@ -1,4 +1,6 @@
-## CHECK PATH /home/pi/project/data/OfertaInicial (Alternativa)/files/downData.txt
+## CHECK PATH
+path = "./files/" ## For windows (VS)
+## path = "/home/pi/project/data/OfertaInicial (Alternativa)/files/" ## For raspberry
 
 import datetime
 import time
@@ -32,5 +34,5 @@ def updateData():
     global data
     data = body.decode('utf-8').replace("\r", '')
     if data.find('"page-not-found.aspx?404') == -1:
-        file = open("./files/downDataO.txt", "w")
+        file = open(path + "downDataO.txt", "w")
         file.write(data)

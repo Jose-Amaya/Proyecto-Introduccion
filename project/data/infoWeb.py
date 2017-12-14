@@ -1,4 +1,6 @@
-## CHECK PATH /home/pi/project/data/files/infoWeb.txt
+## CHECK PATH
+path = "./files/" ## For windows (VS)
+## path = "/home/pi/project/data/files/" ## For raspberry
 
 # Este programa actualizara un archivo con los datos de las centrales
 from dataTranslate import uhourCents ## Importar la funcion que dara la información sobre todas las centrales
@@ -11,5 +13,5 @@ def updateInfoWeb(): ## Se define una funcion que va a escribir en el archivo in
     for x in matrix:
         string = string + str(x) + "\n"
 
-    file = open ("./files/infoWeb.txt","w") # Abrir el archivo
+    file = open (path + "infoWeb.txt","w") # Abrir el archivo
     file.write(string) # escribir en el archivo la informacion

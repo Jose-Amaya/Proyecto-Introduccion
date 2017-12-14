@@ -1,4 +1,6 @@
 ## CHECK PATH
+path = "/home/pi/project/data/files/" ##for raspberry
+
 
 import RPi.GPIO as GPIO ## Se importan la libreria RPi.GPIO, y se le da el nombre de GPIO para que sea de mas facil acceso, para llamar una funcion de la liberia se usara GPIO.funcion en vez de RPi.GPIO.funcion, esta libreria permite controlar los pines de la raspbery
 import time ## Libreria usada para hacer que el programa se pause por un tiempo especifico (usando la funcion sleep de la libreria)
@@ -105,7 +107,7 @@ try:
 
     def updatedata(): ## Funcion definida para obtener la informacion del archivo de texto
         global matrix ## Tomar la variable global "matrix", esto evita que se cree una nueva variable dentro de la funcion
-        file = open("/home/pi/project/data/files/matSdata.txt","r") ## Abrir el archivo donde estaran los datos
+        file = open(path + "matSdata.txt","r") ## Abrir el archivo donde estaran los datos
 
         """
         #### para datos de OfertaInicial:
