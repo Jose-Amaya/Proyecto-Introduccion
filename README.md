@@ -42,7 +42,7 @@ se encarga de tomar la información descargada en ./files/downData.txt ; tiene d
 
 ## OfertaInicial (Alternativa)
 
-Si se desean usar los datos de Oferta inicial, y no los de Despacho nacional, se corre, de este archivo dataUpdaterO.py, y se actualiza matS.py
+Si se desean usar los datos de Oferta inicial, y no los de Despacho nacional, se corre, de esta carpeta dataUpdaterO.py, y se actualiza matS.py
 
 # PATH
 
