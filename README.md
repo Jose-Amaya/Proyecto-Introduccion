@@ -14,6 +14,12 @@ sudo python3 /pathToProject/matS.py &
 
 Se agregarán estas dos lineas al final de /etc/profile en la raspberry para que se ejecuten al encender la raspberry
 
+También se pueden agregar como tareas a realizar al encenderse, usando esta guía:
+
+'''
+https://www.raspberrypi.org/documentation/linux/usage/cron.md
+'''
+
 ## Información de los archivos
 
 ### Centrales * .xlsx
