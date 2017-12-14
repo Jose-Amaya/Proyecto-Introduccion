@@ -1,4 +1,4 @@
-## CHECK PATH
+## CHECK PATH /home/pi/project/data/OfertaInicial (Alternativa)/files/downData.txt
 
 import datetime
 import time

@@ -1,4 +1,4 @@
-## CHECK PATH
+## CHECK PATH matrixMage() /home/pi/project/data/OfertaInicial (Alternativa)/files/downData.txt actualMata() /home/pi/project/data/OfertaInicial (Alternativa)/files/matSdata.txt
 
 import time # Para esperar un tiempo especifico
 import datetime # Para saber la hora
@@ -74,6 +74,14 @@ def uhour(): ## Esta funcion va a devolver una matriz con los datos de generacio
                 matrix[x][y] = Centrales[genName[y + x*8]][hr]
             else:
                 matrix[x][y] = 0
+    return (matrix)
+
+def uhourCents(): ## Esta funcion va a devolver una lista con los datos de generacion de una planta para la respectiva hora
+    Centrales = updateCentrales() ## Actualizar el diccionario Centrales
+    hr = datetime.datetime.today().hour ## Hora del dia
+    matrix = [0]*len(genName) ## Matrix que va a ser usada por infoWeb.py
+    for x in range(0,len(genName)):
+        matrix[x] = Centrales[genName[x]][hr]
     return (matrix)
 
 def actualMat(): ## Funcion que devuelve la informacion para poner en el archivo de texto que lee matS.py

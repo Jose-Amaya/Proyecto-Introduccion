@@ -106,6 +106,12 @@ try:
     def updatedata(): ## Funcion definida para obtener la informacion del archivo de texto
         global matrix ## Tomar la variable global "matrix", esto evita que se cree una nueva variable dentro de la funcion
         file = open("/home/pi/project/data/files/matSdata.txt","r") ## Abrir el archivo donde estaran los datos
+
+        """
+        #### para datos de OfertaInicial:
+        file = open ("/home/pi/project/data/OfertaInicial (Alternativa)/files/matSdata.txt","r")
+
+        """
         placeHolder = file.read() ## Una variable, llamada placeHolder, sera igual a los datos que tenga el archivo de texto
         if len(placeHolder) is not 0: ## Comprueba que la variable placeHolder tenga mas de 0 caracteres, esto sucede si al leer el archivo, este esta abierto por otro programa, por lo que la variable placeHolder no tendra informacion
             #### CODIGO PARA LA MATRIZ DE PRUEBA START
