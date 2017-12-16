@@ -17,7 +17,7 @@ updateInfoWeb() # actualizar el archivo infoWeb
 
 
 while True:
-    
+
     if lastDay is not datetime.date.today().day: ## Cuando cambie el dia, es decir cuando sean las 12
         
         updateData() ## Descargar la informacion de la pagina web y guardarla en un archivo
@@ -31,7 +31,7 @@ while True:
 
     else:
         
-        if datetime.datetime.today().hour is not lastHour: # Si cambia la hora
+        if lastHour is not datetime.datetime.today().hour: # Si cambia la hora
             
             actualMata()
             time.sleep(5)

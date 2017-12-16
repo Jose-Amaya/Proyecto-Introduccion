@@ -57,10 +57,18 @@ for x in file:
 file = open ("testing.txt", "w")
 file.write(string)
 """
-
+"""
 string = ""
 for x in file:
     string = string + "$" + x.replace("\n", "") + " = fgets($file);\nf"
+
+file = open ("testing.txt", "w")
+file.write(string)
+"""
+
+string = ""
+for x in file:
+    string = string + "<tr>\n  <td>" + x.replace("\n", "") + "</td>\n  <td> <?php echo($" + x.replace("\n","") + "); ?></td>\n</tr>" +"\n"
 
 file = open ("testing.txt", "w")
 file.write(string)

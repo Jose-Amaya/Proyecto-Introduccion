@@ -1,47 +1,188 @@
-$JEPIRACHI1-15 = fgets($file);
-$FLORES = fgets($file);
-$BARRANQUILLA = fgets($file);
-$GUAJIRA = fgets($file);
-$TASAJERO = fgets($file);
-$TERMOSIERRAB = fgets($file);
-$TERMOEMCALI1 = fgets($file);
-$PAIPA = fgets($file);
-$TERMOCENTROCC = fgets($file);
-$ZIPAEMG = fgets($file);
-$CARTAGENA = fgets($file);
-$MERILECTRICA1 = fgets($file);
-$LAHERRADURA = fgets($file);
-$JAGUAS = fgets($file);
-$SANCARLOS = fgets($file);
-$SOGAMOSO = fgets($file);
-$AMOYALAESPERANZA = fgets($file);
-$MIELI = fgets($file);
-$CALDERAS = fgets($file);
-$GUAVIO = fgets($file);
-$BETANIA = fgets($file);
-$ELQUIMBO = fgets($file);
-$PARAISO = fgets($file);
-$LAGUACA = fgets($file);
-$TEQUENDAMA = fgets($file);
-$LATASAJERA = fgets($file);
-$CARACOLI = fgets($file);
-$ELLIMONAR = fgets($file);
-$DARIOVALENCIASAMPER = fgets($file);
-$LAGUNETA = fgets($file);
-$PAJARITO = fgets($file);
-$SANJOSEDELAMONTAÑA = fgets($file);
-$TRONERAS = fgets($file);
-$GUADALUPE3 = fgets($file);
-$GUADALUPE4 = fgets($file);
-$PORCEII = fgets($file);
-$PORCEIII = fgets($file);
-$GUATAPE = fgets($file);
-$RIOABAJO = fgets($file);
-$SONSON = fgets($file);
-$RIOFRIO(TAMESIS) = fgets($file);
-$AYURA = fgets($file);
-$NIQUIA = fgets($file);
-$URRA1 = fgets($file);
-$CHIVOR = fgets($file);
-$CUCUANA = fgets($file);
-$CALIMA = fgets($file);
+<tr>
+  <td>JEPIRACHI115</td>
+  <td> <?php echo($JEPIRACHI115); ?></td>
+</tr>
+<tr>
+  <td>FLORES</td>
+  <td> <?php echo($FLORES); ?></td>
+</tr>
+<tr>
+  <td>BARRANQUILLA</td>
+  <td> <?php echo($BARRANQUILLA); ?></td>
+</tr>
+<tr>
+  <td>GUAJIRA</td>
+  <td> <?php echo($GUAJIRA); ?></td>
+</tr>
+<tr>
+  <td>TASAJERO</td>
+  <td> <?php echo($TASAJERO); ?></td>
+</tr>
+<tr>
+  <td>TERMOSIERRAB</td>
+  <td> <?php echo($TERMOSIERRAB); ?></td>
+</tr>
+<tr>
+  <td>TERMOEMCALI1</td>
+  <td> <?php echo($TERMOEMCALI1); ?></td>
+</tr>
+<tr>
+  <td>PAIPA</td>
+  <td> <?php echo($PAIPA); ?></td>
+</tr>
+<tr>
+  <td>TERMOCENTROCC</td>
+  <td> <?php echo($TERMOCENTROCC); ?></td>
+</tr>
+<tr>
+  <td>ZIPAEMG</td>
+  <td> <?php echo($ZIPAEMG); ?></td>
+</tr>
+<tr>
+  <td>CARTAGENA</td>
+  <td> <?php echo($CARTAGENA); ?></td>
+</tr>
+<tr>
+  <td>MERILECTRICA1</td>
+  <td> <?php echo($MERILECTRICA1); ?></td>
+</tr>
+<tr>
+  <td>LAHERRADURA</td>
+  <td> <?php echo($LAHERRADURA); ?></td>
+</tr>
+<tr>
+  <td>JAGUAS</td>
+  <td> <?php echo($JAGUAS); ?></td>
+</tr>
+<tr>
+  <td>SANCARLOS</td>
+  <td> <?php echo($SANCARLOS); ?></td>
+</tr>
+<tr>
+  <td>SOGAMOSO</td>
+  <td> <?php echo($SOGAMOSO); ?></td>
+</tr>
+<tr>
+  <td>AMOYALAESPERANZA</td>
+  <td> <?php echo($AMOYALAESPERANZA); ?></td>
+</tr>
+<tr>
+  <td>MIELI</td>
+  <td> <?php echo($MIELI); ?></td>
+</tr>
+<tr>
+  <td>CALDERAS</td>
+  <td> <?php echo($CALDERAS); ?></td>
+</tr>
+<tr>
+  <td>GUAVIO</td>
+  <td> <?php echo($GUAVIO); ?></td>
+</tr>
+<tr>
+  <td>BETANIA</td>
+  <td> <?php echo($BETANIA); ?></td>
+</tr>
+<tr>
+  <td>ELQUIMBO</td>
+  <td> <?php echo($ELQUIMBO); ?></td>
+</tr>
+<tr>
+  <td>PARAISO</td>
+  <td> <?php echo($PARAISO); ?></td>
+</tr>
+<tr>
+  <td>LAGUACA</td>
+  <td> <?php echo($LAGUACA); ?></td>
+</tr>
+<tr>
+  <td>TEQUENDAMA</td>
+  <td> <?php echo($TEQUENDAMA); ?></td>
+</tr>
+<tr>
+  <td>LATASAJERA</td>
+  <td> <?php echo($LATASAJERA); ?></td>
+</tr>
+<tr>
+  <td>CARACOLI</td>
+  <td> <?php echo($CARACOLI); ?></td>
+</tr>
+<tr>
+  <td>ELLIMONAR</td>
+  <td> <?php echo($ELLIMONAR); ?></td>
+</tr>
+<tr>
+  <td>DARIOVALENCIASAMPER</td>
+  <td> <?php echo($DARIOVALENCIASAMPER); ?></td>
+</tr>
+<tr>
+  <td>LAGUNETA</td>
+  <td> <?php echo($LAGUNETA); ?></td>
+</tr>
+<tr>
+  <td>PAJARITO</td>
+  <td> <?php echo($PAJARITO); ?></td>
+</tr>
+<tr>
+  <td>SANJOSEDELAMONTAÑA</td>
+  <td> <?php echo($SANJOSEDELAMONTAÑA); ?></td>
+</tr>
+<tr>
+  <td>TRONERAS</td>
+  <td> <?php echo($TRONERAS); ?></td>
+</tr>
+<tr>
+  <td>GUADALUPE3</td>
+  <td> <?php echo($GUADALUPE3); ?></td>
+</tr>
+<tr>
+  <td>GUADALUPE4</td>
+  <td> <?php echo($GUADALUPE4); ?></td>
+</tr>
+<tr>
+  <td>PORCEII</td>
+  <td> <?php echo($PORCEII); ?></td>
+</tr>
+<tr>
+  <td>PORCEIII</td>
+  <td> <?php echo($PORCEIII); ?></td>
+</tr>
+<tr>
+  <td>GUATAPE</td>
+  <td> <?php echo($GUATAPE); ?></td>
+</tr>
+<tr>
+  <td>RIOABAJO</td>
+  <td> <?php echo($RIOABAJO); ?></td>
+</tr>
+<tr>
+  <td>SONSON</td>
+  <td> <?php echo($SONSON); ?></td>
+</tr>
+<tr>
+  <td>RIOFRIOTAMESIS</td>
+  <td> <?php echo($RIOFRIOTAMESIS); ?></td>
+</tr>
+<tr>
+  <td>AYURA</td>
+  <td> <?php echo($AYURA); ?></td>
+</tr>
+<tr>
+  <td>NIQUIA</td>
+  <td> <?php echo($NIQUIA); ?></td>
+</tr>
+<tr>
+  <td>URRA1</td>
+  <td> <?php echo($URRA1); ?></td>
+</tr>
+<tr>
+  <td>CHIVOR</td>
+  <td> <?php echo($CHIVOR); ?></td>
+</tr>
+<tr>
+  <td>CUCUANA</td>
+  <td> <?php echo($CUCUANA); ?></td>
+</tr>
+<tr>
+  <td>CALIMA</td>
+  <td> <?php echo($CALIMA); ?></td>
+</tr>
