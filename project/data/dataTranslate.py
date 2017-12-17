@@ -2,7 +2,7 @@
 path = "./files/" ## For windows (VS)
 path2 = 'C:/Users/MEGA/Documents/GitHub/Proyecto-Introduccion/project/data/OfertaInicial (Alternativa)' ## Para Guadalupe
 ## path = "/home/pi/project/data/files/" ## For raspberry
-## path 2 = "/home/pi/project/data/OfertaInicial (Alternativa)"
+## path2 = "/home/pi/project/data/OfertaInicial (Alternativa)"
 
 import sys
 sys.path.insert(0, path2)
