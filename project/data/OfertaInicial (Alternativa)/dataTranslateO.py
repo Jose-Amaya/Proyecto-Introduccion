@@ -1,5 +1,5 @@
 ## CHECK PATH
-path = "./files/" ## For windows (VS)
+path = "C:/Users/MEGA/Documents/GitHub/Proyecto-Introduccion/project/data/OfertaInicial (Alternativa)/files/" ## For windows (VS)
 ## path = "/home/pi/project/data/OfertaInicial (Alternativa)/files/" ## For raspberry
 
 import time # Para esperar un tiempo especifico
@@ -37,10 +37,10 @@ def matAdd(*args): ## Funcion para sumar matrices
 
 def matrixMake(Central): ## Funcion que devolvera una matriz con los valores de generacion para cada central
 
-    file = open(path + "downDataO.txt") ## Se abre el archivo downData.txt donde esta la informacion para el dia de hoy
+    file = open(path + "downDataO.txt") ## Se abre el archivo downDataO.txt donde esta la informacion para el dia de hoy
     data = file.read() ## Se lee
 
-    if len(data) is not 0: ## Si el archivo data.txt no ha sido abierto por otro programa...
+    if len(data) is not 0: ## Si el archivo downData.txt no ha sido abierto por otro programa...
         file = open(path + "downDataO.txt") ## Abrir el archivo (al ejecutar el metodo .read() el archivo se cierra)
         matrix = [] ## Se define una matriz vacia donde se guardaran los valores
         matrixString = "" ## Se define una cadena de caracteres, vacia, donde se guardara la informacion de la central

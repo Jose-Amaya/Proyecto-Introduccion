@@ -1,5 +1,6 @@
 import random
 file = open ("testing.txt")
+file2 = open ("testing2.txt")
 global string
 string = ""
 """
@@ -68,7 +69,7 @@ file.write(string)
 
 string = ""
 for x in file:
-    string = string + "<tr>\n  <td>" + x.replace("\n", "") + "</td>\n  <td> <?php echo($" + x.replace("\n","") + "); ?></td>\n</tr>" +"\n"
+    string = string + x.replace("\"" , "")
 
 file = open ("testing.txt", "w")
 file.write(string)
