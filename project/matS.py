@@ -10,10 +10,11 @@ GPIO.setmode(GPIO.BOARD) ## Hay varias maneras de numerar los pines de la raspbe
 
 wt = 0.001 ##Una variable que representa el tiempo que una fila de leds va a estar prendida
 
+global matrix
 
-#### CODIGO PARA LA MATRIZ DE PRUEBA START
 matrix = [[0]*8 for x in range(0,8)] ## Se crea una matriz, una lista, compuesta por 8 listas, compuestas cada una por 8 ceros
 
+#### CODIGO PARA LA MATRIZ DE PRUEBA START
 row = [3,5,7,11,13,15,19,21] ## Estos son los numeros de los pines que van a controlar el voltaje que llega a los anodos de los leds, son las filas, si su estado es positivo, se va a encender la fila
 column = [8,10,12,16,18,22,24,26] ## Pines que van a controlar el voltaje que llega a los catodos de los leds, son las columnas, si su estado es negativo, se va a encender la columna
 #### END
@@ -21,8 +22,8 @@ column = [8,10,12,16,18,22,24,26] ## Pines que van a controlar el voltaje que ll
 """
 #### Para la matrix real
 
-row = [18, 22, 24, 26, 32, 36, 38, 40] # rojo en brd PCB P8 -> P1
-column = [11, 7, 5, 3, 37, 35, 33, 31] # azul en brd PCB BN pins
+column = [18, 22, 24, 26, 32, 36, 38, 40] # rojo en brd PCB P8 -> P1
+row = [11, 7, 5, 3, 37, 35, 33, 31] # azul en brd PCB BN pins
 
 """
 
