@@ -1,47 +1,24 @@
-E	1
-T	1
-T	2
-T	3
-T	4
-T	5
-T	6
-T	7
-T	8
-T	9
-T	10
-T	11
-H	1
-H	2
-H	3
-H	4
-H	5
-H	6
-H	7
-H	8
-H	9
-H	10
-H	11
-H	12
-H	13
-H	14
-H	15
-H	16
-H	17
-H	18
-H	19
-H	20
-H	21
-H	22
-H	23
-H	24
-H	25
-H	26
-H	27
-H	28
-H	29
-H	30
-H	31
-H	32
-H	33
-H	34
-H	35
+Red0
+Red1
+Red2
+Red3
+Red4
+Green0
+Green1
+Green2
+Green3
+Green4
+Blue0
+Blue1
+Blue2
+Blue3
+Blue4
+Flash
+Strobe
+Fade
+Smooth
+LightUp
+LightDown
+LightsOff
+LightsOn
+White

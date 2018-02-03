@@ -68,8 +68,9 @@ file.write(string)
 """
 
 string = ""
-for x in file:
-    string = string + x.replace("\"" , "")
+for y in file:
+        string = string + y.replace("\n", "").replace( ")",");") + "\n"
+
 
 file = open ("testing.txt", "w")
 file.write(string)

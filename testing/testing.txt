@@ -1,450 +1,72 @@
-<tr>
-
-  <th></th>  
-
-  <th>EÓLICA</th>
-
-  <td></td>
-
-</tr>
-<tr>
-
-  <th>E-1</th>  
-
-  <td>PARQUE EÓLICO DE JEPÍRACHI</td>
-
-  <td> <?php echo($JEPIRACHI115); ?></td>
-
-</tr>
-<tr>
-
-  <th></th>  
-
-  <th>HIDROELÉCTRICA</th>
-
-  <td></td>
-
-</tr>
-<tr>
-
-  <th>H-1</th>  
-
-  <td>LA HERRADURA</td>
-
-  <td> <?php echo($LAHERRADURA); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-2</th>  
-
-  <td>JAGUAS</td>
-
-  <td> <?php echo($JAGUAS); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-3</th>  
-
-  <td>SAN CARLOS</td>
-
-  <td> <?php echo($SANCARLOS); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-4</th>  
-
-  <td>SOGAMOSO</td>
-
-  <td> <?php echo($SOGAMOSO); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-5</th>  
-
-  <td>AMOYA LA ESPERANZA</td>
-
-  <td> <?php echo($AMOYALAESPERANZA); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-6</th>  
-
-  <td>MIEL I</td>
-
-  <td> <?php echo($MIELI); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-7</th>  
-
-  <td>CALDERAS</td>
-
-  <td> <?php echo($CALDERAS); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-8</th>  
-
-  <td>GUAVIO</td>
-
-  <td> <?php echo($GUAVIO); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-9</th>  
-
-  <td>BETANIA</td>
-
-  <td> <?php echo($BETANIA); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-10</th>  
-
-  <td>EL QUIMBO</td>
-
-  <td> <?php echo($ELQUIMBO); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-11</th>  
-
-  <td>PARAÍSO</td>
-
-  <td> <?php echo($PARAISO); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-12</th>  
-
-  <td>GUACA</td>
-
-  <td> <?php echo($LAGUACA); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-13</th>  
-
-  <td>TEQUENDAMA</td>
-
-  <td> <?php echo($TEQUENDAMA); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-14</th>  
-
-  <td>LA TASAJERA</td>
-
-  <td> <?php echo($LATASAJERA); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-15</th>  
-
-  <td>CARACOLÍ</td>
-
-  <td> <?php echo($CARACOLI); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-16</th>  
-
-  <td>LIMONAR</td>
-
-  <td> <?php echo($ELLIMONAR); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-17</th>  
-
-  <td>DARIO VALENCIA</td>
-
-  <td> <?php echo($DARIOVALENCIASAMPER); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-18</th>  
-
-  <td>LAGUNETA</td>
-
-  <td> <?php echo($LAGUNETA); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-19</th>  
-
-  <td>PAJARITO</td>
-
-  <td> <?php echo($PAJARITO); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-20</th>  
-
-  <td>SAN JOSÉ DE LA MONTAÑA</td>
-
-  <td> <?php echo($SANJOSEDELAMONTAÑA); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-21</th>  
-
-  <td>TRONERAS</td>
-
-  <td> <?php echo($TRONERAS); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-22</th>  
-
-  <td>GUADALUPE III</td>
-
-  <td> <?php echo($GUADALUPE3); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-23</th>  
-
-  <td>GUADALUPE IV</td>
-
-  <td> <?php echo($GUADALUPE4); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-24</th>  
-
-  <td>PORCE II</td>
-
-  <td> <?php echo($PORCEII); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-25</th>  
-
-  <td>PORCE III</td>
-
-  <td> <?php echo($PORCEIII); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-26</th>  
-
-  <td>GUATAPÉ</td>
-
-  <td> <?php echo($GUATAPE); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-27</th>  
-
-  <td>RIO ABAJO</td>
-
-  <td> <?php echo($RIOABAJO); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-28</th>  
-
-  <td>SONSÓN</td>
-
-  <td> <?php echo($SONSON); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-29</th>  
-
-  <td>TAMESIS</td>
-
-  <td> <?php echo($RIOFRIOTAMESIS); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-30</th>  
-
-  <td>AYURA</td>
-
-  <td> <?php echo($AYURA); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-31</th>  
-
-  <td>NIQUIA</td>
-
-  <td> <?php echo($NIQUIA); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-32</th>  
-
-  <td>URRA I</td>
-
-  <td> <?php echo($URRA1); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-33</th>  
-
-  <td>CHIVOR</td>
-
-  <td> <?php echo($CHIVOR); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-34</th>  
-
-  <td>CUCUANA</td>
-
-  <td> <?php echo($CUCUANA); ?></td>
-
-</tr>
-<tr>
-
-  <th>H-35</th>  
-
-  <td>CALIMA</td>
-
-  <td> <?php echo($CALIMA); ?></td>
-
-</tr>
-<tr>
-
-  <th></th>  
-
-  <th>TERMOELÉCTRICA</th>
-
-  <td></td>
-
-</tr>
-<tr>
-
-  <th>T-1</th>  
-
-  <td>TERMOFLORES</td>
-
-  <td> <?php echo($FLORES); ?></td>
-
-</tr>
-<tr>
-
-  <th>T-2</th>  
-
-  <td>TERMOBARRANQUILLA</td>
-
-  <td> <?php echo($BARRANQUILLA); ?></td>
-
-</tr>
-<tr>
-
-  <th>T-3</th>  
-
-  <td>TERMOGUAJIRA</td>
-
-  <td> <?php echo($GUAJIRA); ?></td>
-
-</tr>
-<tr>
-
-  <th>T-4</th>  
-
-  <td>TERMOSAJERA</td>
-
-  <td> <?php echo($TASAJERO); ?></td>
-
-</tr>
-<tr>
-
-  <th>T-6</th>  
-
-  <td>TERMOEMCALI</td>
-
-  <td> <?php echo($TERMOEMCALI1); ?></td>
-
-</tr>
-<tr>
-
-  <th>T-7</th>  
-
-  <td>TERMOPAIPA</td>
-
-  <td> <?php echo($PAIPA); ?></td>
-
-</tr>
-<tr>
-
-  <th>T-8</th>  
-
-  <td>TERMOCENTRO</td>
-
-  <td> <?php echo($TERMOCENTROCC); ?></td>
-
-</tr>
-<tr>
-
-  <th>T-9</th>  
-
-  <td>TERMOELÉCTRICA MARTIN DEL CORRAL</td>
-
-  <td> <?php echo($ZIPAEMG); ?></td>
-
-</tr>
-<tr>
-
-  <th>T-10</th>  
-
-  <td>CENTRAL TÉRMICA DE CARTAGENA</td>
-
-  <td> <?php echo($CARTAGENA); ?></td>
-
-</tr>
-<tr>
-
-  <th>T-11</th>  
-
-  <td>MERIELECTRICA</td>
-
-  <td> <?php echo($MERILECTRICA1); ?></td>
-
-</tr>
-<tr>
-
-  <th>T-12</th>  
-
-  <td>TERMOSIERRA</td>
-
-  <td> <?php echo($TERMOSIERRAB); ?></td>
-
-</tr>
+case 'q':
+     sendSignal(Red0);
+    break;
+    case 'w':
+     sendSignal(Red1);
+    break;
+    case 'e':
+     sendSignal(Red2);
+    break;
+    case 'r':
+     sendSignal(Red3);
+    break;
+    case 't':
+     sendSignal(Red4);
+    break;
+    case 'a':
+     sendSignal(Green0);
+    break;
+    case 's':
+     sendSignal(Green1);
+    break;
+    case 'd':
+     sendSignal(Green2);
+    break;
+    case 'f':
+     sendSignal(Green3);
+    break;
+    case 'g':
+     sendSignal(Green4);
+    break;
+    case 'z':
+     sendSignal(Blue0);
+    break;
+    case 'x':
+     sendSignal(Blue1);
+    break;
+    case 'c':
+     sendSignal(Blue2);
+    break;
+    case 'v':
+     sendSignal(Blue3);
+    break;
+    case 'b':
+     sendSignal(Blue4);
+    break;
+    case 'y':
+     sendSignal(Flash);
+    break;
+    case 'h':
+     sendSignal(Strobe);
+    break;
+    case 'n':
+     sendSignal(Fade);
+    break;
+    case 'u':
+     sendSignal(Smooth);
+    break;
+    case 'j':
+     sendSignal(LightUp);
+    break;
+    case 'm':
+     sendSignal(LightDown);
+    break;
+    case 'i':
+     sendSignal(LightsOff);
+    break;
+    case 'k':
+     sendSignal(LightsOn);
+    break;
+    case 'o':
+     sendSignal(White);
+    break;
