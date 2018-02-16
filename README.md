@@ -14,18 +14,21 @@ sudo python3 /pathToProject/matS.py &
 
 Se agregarán estas dos lineas al final de /etc/profile en la raspberry para que se ejecuten al encender la raspberry
 
-También se pueden agregar como tareas a realizar al encenderse (una mejor opción), usando estas guías:
+También se pueden agregar como tareas a realizar al encenderse (una mejor opción), usando esta guía:
 
 ```
-https://www.raspberrypi.org/documentation/linux/usage/cron.md
-https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/#systemd (recommended)
+https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/#systemd
 ```
 
 ## Información de los archivos
 
-### Centrales * .xlsx
+### Centrales.xlsx
 
-Contienen una lista con las centrales, y la información de XM, la diferencia entre los dos archivos es que el archivo "(Con oferta inicial)" contiene información sobre las centrales para los archivos de Oferta inicial
+Contienen una lista con las centrales, y la información de XM
+
+### EsquemaPCB.png
+
+El esquema de la PCB, con el orden de las centrales
 
 ## Project
 
@@ -37,7 +40,7 @@ Programa que actualiza la matriz de LEDs basado en los datos que se encuentran e
 
 ### infoWeb.py
 
-Programa que actualiza el archivo ./data/files/infoWeb.txt ; en cada linea se muestra la informacion de la central para la hora actual, el orden es el mismo que en los archivos Centrales * .xlsx
+Programa que actualiza el archivo ./data/files/infoWeb.txt ; en cada linea se muestra la informacion de la central para la hora actual, el orden es el mismo que en el archivo Centrales.xlsx
 
 ### dataUpdater.py
 

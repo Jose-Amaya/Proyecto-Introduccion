@@ -1,45 +1,46 @@
 ## Este programa se encargara de actualizar los archivos, ejecutando las funciones de los otros programas
-## matS.py se corre en paralelo junto con este
+## matS.py se corre en paralelo con este
 
-import time # para esperar un tiempo
-import datetime # para saber la hora y el dia
-from dataGet import updateData # para descargar la informacion del sitio
-from dataTranslate import actualMata # para actualizar el archivo leido por matS.py
-from infoWeb import updateInfoWeb # para actualizar el archivo que puede ser leido por la pagina web
+import time ## Libreria usada para hacer que el programa se pause por un tiempo especifico (usando la funcion sleep de la libreria ( time.sleep(tiempo en segundos) ))
+import datetime # Libreria usada para obtener dia y hora
+from dataGet import updateData # del archivo dataGet.py, importar la funcion updateData, que para el dia de ejecucion, descarga la informacion de xm.com.co, y la guarda en downData.txt
+from dataTranslate import actualMata # del archivo dataTranslate.py, importar la funcion actualMata, que al ser ejecutada, guarda un matriz, en el archivo matSdata.txt, con el estado de cada central para la hora de ejecucion
+from infoWeb import updateInfoWeb # del archivo infoWeb.py, importar la funcion updateInfoWeb, que actualiza el archivo infoWeb con los datos de generacion de las centrales
 
-global lastDay,lastHour # variable de tipo boolean que dice si ya se actualizo el archivo downData para el dia de hoy
+global lastDay,lastHour # Variables que contendran el dia y la hora medidas por ultima vez
 
-lastDay = datetime.date.today().day # el dia
-lastHour = datetime.datetime.today().hour # definir una variable lastHour igual a la hora en que se empiece a ejecutar el programa
-updateData() # descargar los datos de la pagina
-actualMata() # actualizar el archivo leido por matS.py
-updateInfoWeb() # actualizar el archivo infoWeb
+## Esta parte del codigo actualiza todos los archivos
+lastDay = datetime.date.today().day # Obtener el dia para cuando se ejecute esta parte del codigo
+lastHour = datetime.datetime.today().hour # Obtener la hora para cuando se ejecute esta parte del codigo
+updateData() # Descargar informacion de xm.com.co ( actualizar downData.txt )
+actualMata() # Actualizar el archivo leido por matS.py ( matSdata.txt )
+updateInfoWeb() # Actualizar el archivo infoWeb.txt
 
 
 while True:
 
-    if lastDay is not datetime.date.today().day: ## Cuando cambie el dia, es decir cuando sean las 12
+    if lastDay is not datetime.date.today().day: ## Cuando cambie el dia, es decir cuando sean las 12 ( Si la ultima hora guardada, es diferente a la hora tomada en el tiempo de ejecucion de esta parte del codigo, significa que cambio la hora )
         
-        updateData() ## Descargar la informacion de la pagina web y guardarla en un archivo
+        updateData() # Descargar informacion de xm.com.co ( actualizar downData.txt )
         time.sleep(5) ## Esperar 5 segundos
-        actualMata() ## actualizar el archivo leido por matS.py
-        time.sleep(5)
-        updateInfoWeb() # actualizar el archivo infoWeb
-        time.sleep(5)
+        actualMata() # Actualizar el archivo leido por matS.py ( matSdata.txt )
+        time.sleep(5) ## Esperar 5 segundos
+        updateInfoWeb() # Actualizar el archivo infoWeb.txt
+        time.sleep(5) ## Esperar 5 segundos
 
-        lastDay = datetime.date.today().day # Igualar ultimo dia leido al dia leido en el ciclo
+        lastDay = datetime.date.today().day # Actualizar el ultimo dia leido, al dia leido al ejecutar esta parte del codigo
 
     else:
         
         if lastHour is not datetime.datetime.today().hour: # Si cambia la hora
             
-            actualMata()
-            time.sleep(5)
-            updateInfoWeb()
-            time.sleep(5)
+            actualMata() # Actualizar el archivo leido por matS.py ( matSdata.txt )
+            time.sleep(5) ## Esperar 5 segundos
+            updateInfoWeb() # Actualizar el archivo infoWeb.txt
+            time.sleep(5) ## Esperar 5 segundos
 
             lastHour = datetime.datetime.today().hour # Igualar ultima hora leida a la hora leida en cada ciclo
         
         else:
             
-            time.sleep(5) # Si todavia no ha cambiado la hora, ni el dia, esperar 5 segundos antes de empezar denuevo el ciclo
+            time.sleep(5) # Si todavia no ha cambiado la hora, ni el dia, esperar 5 segundos antes de comprar denuevo si hay un cambio

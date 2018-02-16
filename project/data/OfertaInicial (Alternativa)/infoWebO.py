@@ -3,7 +3,7 @@ path = "./files/" ## For windows (VS)
 ## path = "/home/pi/project/data/OfertaInicial (Alternativa)/files/" ## For raspberry
 
 # Este programa actualizara un archivo con los datos de las centrales
-from dataTranslateO import uhourCents ## Importar la funcion que dara la información sobre todas las centrales
+from dataTranslateO import uhourCents ## Importar la funcion que dara la informacion sobre todas las centrales
 
 def updateInfoWeb(): ## Se define una funcion que va a escribir en el archivo infoWeb.txt, la informacion para cada central en una fila distinta
 
