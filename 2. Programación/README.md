@@ -2,7 +2,7 @@
 
 Los archivos principales se encuentran en la carpeta "project", esta carpeta debe ir en el directorio 'home/pi' de la Raspberry Pi
 
-Se planean utilizar los datos de Despacho Nacional, pero si es necesario, se pueden utilizar los datos de Oferta inicial, para esto se ejecuta dataUpdaterO.py (En la carpeta Oferta inicial) en vez de dataUpdater.py, y se cambia una linea de código en matS.py
+Se planean utilizar los datos de Despacho Nacional, pero si es necesario, se pueden utilizar los datos de Oferta inicial, para esto se cambia una linea de código en matS.py
 
 # Requisitos
 
@@ -45,7 +45,7 @@ Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo
 	```
 
 Guias de referencia:
-*https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md
+* https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md
 
 ## Ejecución
 
@@ -151,9 +151,9 @@ sudo reboot
 ```
 
 Guias de referencia:
-*https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/#systemd
-*https://www.raspberrypi.org/documentation/linux/usage/systemd.md
-*https://www.freedesktop.org/software/systemd/man/systemd.service.html
+* https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/#systemd
+* https://www.raspberrypi.org/documentation/linux/usage/systemd.md
+* https://www.freedesktop.org/software/systemd/man/systemd.service.html
 
 ## Información de los archivos
 
