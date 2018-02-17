@@ -18,16 +18,19 @@ Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo
 2. Instalar Python3.5:
 	1. Abrir el terminal y ejecutar:
 	```
-	sudo apt-get install python3.5```
+	sudo apt-get install python3.5
+	```
 
 3. Instalar la librería Pycurl:
 	1. Abrir el terminal y ejecutar:
 	```
-	sudo pip install pycurl```
+	sudo pip install pycurl
+	```
 	2. Si la ejecución falla, ejecutar:
 	```
-	sudo apt-get install python-pip```
-	y ejecutar 3.1. denuevo
+	sudo apt-get install python-pip
+	```
+		y ejecutar 3.1. denuevo
 
 
 
