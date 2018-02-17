@@ -13,24 +13,24 @@ Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo
 1. Instalar Raspbian:
 	1. Descargar [RASPBIAN STRETCH WITH DESKTOP](https://www.raspberrypi.org/downloads/raspbian/)
 	2. Descargar [Etcher](https://etcher.io/)
-..3. Seguir las instrucciones de la página de [Etcher](https://etcher.io/) para instalar el sistema operativo en la memoria SD
+	3. Seguir las instrucciones de la página de [Etcher](https://etcher.io/) para instalar el sistema operativo en la memoria SD
 
 2. Instalar Python3.5:
 	1. Abrir el terminal y ejecutar:
-```
-sudo apt-get install python3.5
-```
+	```
+	sudo apt-get install python3.5
+	```
 
 3. Instalar la librería Pycurl:
 	1. Abrir el terminal y ejecutar:
-```
-sudo pip install pycurl
-```
+	```
+	sudo pip install pycurl
+	```
 	2. Si la ejecución falla, ejecutar:
-```
-sudo apt-get install python-pip
-```
-y ejecutar 3.1. denuevo
+	```
+	sudo apt-get install python-pip
+	```
+	y ejecutar 3.1. denuevo
 
 
 
