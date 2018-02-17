@@ -79,12 +79,12 @@ Y
 ENTER
 ```
 
-1. Abrir el terminal y ejecutar:
+4. Abrir el terminal y ejecutar:
 ```
 sudo nano /lib/systemd/system/dataUpdater.service
 ```
 
-2. Escribir:
+5. Escribir:
 ```
  [Unit]
  Description=DataUpdater
@@ -100,19 +100,19 @@ sudo nano /lib/systemd/system/dataUpdater.service
  WantedBy=multi-user.target
 ```
 
-3. Presionar en orden las teclas / combinaciones de teclas:
+6. Presionar en orden las teclas / combinaciones de teclas:
 ```
 CTRL + X
 Y
 ENTER
 ```
 
-1. Abrir el terminal y ejecutar:
+7. Abrir el terminal y ejecutar:
 ```
 sudo nano /lib/systemd/system/dataUpdaterO.service
 ```
 
-2. Escribir:
+8. Escribir:
 ```
  [Unit]
  Description=DataUpdaterO
@@ -128,14 +128,14 @@ sudo nano /lib/systemd/system/dataUpdaterO.service
  WantedBy=multi-user.target
 ```
 
-3. Presionar en orden las teclas / combinaciones de teclas:
+9. Presionar en orden las teclas / combinaciones de teclas:
 ```
 CTRL + X
 Y
 ENTER
 ```
 
-1. En el terminal ejecutar ( una linea a la vez ):
+10. En el terminal ejecutar ( una linea a la vez ):
 ```
 sudo chmod 644 /lib/systemd/system/matS.service
 sudo chmod 644 /lib/systemd/system/dataUpdater.service
