@@ -49,7 +49,7 @@ Guias de referencia:
 
 ## Ejecución
 
-Se ejecutarán matS.py (que actualiza el estado de cada led), dataUpdater.py (que se encarga de correr las funciones para actualizar la información) y dataUpdaterO.py en paralelo, para configurar los programas para que corran al encender la Raspberry, se realizaron estos pasos:
+Se ejecutarán matS.py (que actualiza el estado de cada led), dataUpdater.py (que se encarga de correr las funciones para actualizar la información) y dataUpdaterO.py en paralelo. para configurar los programas para que corran al encender la Raspberry, se realizaron estos pasos:
 
 1. Abrir el terminal y ejecutar:
 ```
@@ -157,14 +157,6 @@ Guias de referencia:
 
 ## Información de los archivos
 
-### Centrales.xlsx
-
-Contienen una lista con las centrales, y la información de XM
-
-### EsquemaPCB.png
-
-El esquema de la PCB, con el orden de las centrales
-
 ## Project
 
 Es la carpeta que va en /home/pi de la raspberry
@@ -175,15 +167,15 @@ Programa que actualiza la matriz de LEDs basado en los datos que se encuentran e
 
 ### infoWeb.py
 
-Programa que actualiza el archivo ./data/files/infoWeb.txt ; en cada linea se muestra la informacion de la central para la hora actual, el orden es el mismo que en el archivo Centrales.xlsx
+Programa que con una función para actualizar el archivo ./data/files/infoWeb.txt ; en cada linea se muestra la informacion de la central para la hora actual, el orden es el mismo que en el archivo Centrales.xlsx
 
 ### dataUpdater.py
 
-Se encarga de correr las funciones de los diferentes programas en ./data , así se evita que dos programas traten de editar un archivo al mismo tiempo, este prorama se corre en paralelo con matS.py
+Se encarga de correr las funciones de los diferentes programas en ./data , así se evita que dos programas traten de editar un archivo al mismo tiempo, este programa se corre en paralelo con matS.py
 
 ### dataTranslate.py
 
-se encarga de tomar la información descargada en ./files/downData.txt ; tiene diferentes funciones hechas para acceder mas facilmente a la informacion
+Se encarga de tomar la información descargada en ./files/downData.txt ; tiene diferentes funciones hechas para acceder mas facilmente a la informacion
 
 ## OfertaInicial(Alternativa)
 
