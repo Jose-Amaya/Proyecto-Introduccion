@@ -4,4 +4,9 @@ El proyecto consiste, en una estructura con un mapa de Colombia, el cuál tiene e
 
 ## Partes del proyecto
 
-Para el desarrollo del proyecto, se editó el mapa para agregar convenciones con las ubicaciones de las centrales; se creó un programa en python que corre en una [Raspberri pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/); Se diseño una página web para mostrar los datos de generación de las centrales; y se diseño una estructura para contener todos los elementos.
+Para el desarrollo del proyecto:
+1. Se editó el mapa para agregar convenciones con las ubicaciones de las centrales
+2. Se creó un programa en python que corre en una [Raspberri pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
+3. Se diseño una PCB, para controlar los 47 LEDs, con solo 16 pines ( o menos ) de la raspberry pi
+4. Se diseño una página web para mostrar los datos de generación de las centrales en un panel
+5. Se diseño una estructura para contener todos los elementos.
