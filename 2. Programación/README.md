@@ -11,22 +11,22 @@ Una memoria SD, de al menos 8GB, y preferiblemente de clase 10, para el sistema 
 Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo [Raspbian -(version Jessie)](https://www.raspberrypi.org/downloads/raspbian/),se necesita de [Python3.5](https://www.python.org/downloads/release/python-350/), y tener la [librería Pycurl](http://pycurl.io/) instalada, y para la página web, se necesita de el servidor HTTP [Apache](https://httpd.apache.org/download.cgi) y de [PHP](http://php.net/downloads.php)
 
 1. Instalar Raspbian:
-1. Descargar [RASPBIAN STRETCH WITH DESKTOP](https://www.raspberrypi.org/downloads/raspbian/)
-2. Descargar [Etcher](https://etcher.io/)
-3. Seguir las instrucciones de la página de [Etcher](https://etcher.io/) para instalar el sistema operativo en la memoria SD
+..1. Descargar [RASPBIAN STRETCH WITH DESKTOP](https://www.raspberrypi.org/downloads/raspbian/)
+..2. Descargar [Etcher](https://etcher.io/)
+..3. Seguir las instrucciones de la página de [Etcher](https://etcher.io/) para instalar el sistema operativo en la memoria SD
 
 2. Instalar Python3.5:
-1. Abrir el terminal y ejecutar:
+..1. Abrir el terminal y ejecutar:
 ```
 sudo apt-get install python3.5
 ```
 
 3. Instalar la librería Pycurl:
-1. Abrir el terminal y ejecutar:
+..1. Abrir el terminal y ejecutar:
 ```
 sudo pip install pycurl
 ```
-2. Si la ejecución falla, ejecutar:
+..2. Si la ejecución falla, ejecutar:
 ```
 sudo apt-get install python-pip
 ```
