@@ -1,6 +1,6 @@
 ## CHECK PATH
-path = "C:/Users/MEGA/Documents/GitHub/Proyecto-Introduccion/project/data/OfertaInicial (Alternativa)/files/" ## For windows (VS)
-## path = "/home/pi/project/data/OfertaInicial (Alternativa)/files/" ## For raspberry
+path = "C:/Users/MEGA/Documents/GitHub/Proyecto-Introduccion/project/data/OfertaInicial(Alternativa)/files/" ## For windows (VS)
+## path = "/home/pi/project/data/OfertaInicial(Alternativa)/files/" ## For raspberry
 
 import time # Para esperar un tiempo especifico
 import datetime # Para saber la hora

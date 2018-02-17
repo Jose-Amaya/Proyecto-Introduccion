@@ -1,6 +1,6 @@
 ## revisar direccion
 path = "/home/pi/project/data/files/" ## Informacion despacho nacional
-path2 = "/home/pi/project/data/OfertaInicial (Alternativa)" ## Informacion no encontrada en despacho nacional
+path2 = "/home/pi/project/data/OfertaInicial(Alternativa)" ## Informacion no encontrada en despacho nacional
 
 import sys # Para usar la funcion path.insert(), libreria para acceder a variables del interprete de python
 sys.path.insert(0, path2) # Al importar la libreria, el interprete solo busca modulos en la direccion donde se encuentra el programa; dataTranslateO se encuentra en otra carpeta, para poder importarla se agrega la direccion al interprete

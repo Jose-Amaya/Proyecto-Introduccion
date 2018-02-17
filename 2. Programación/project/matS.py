@@ -72,7 +72,7 @@ try: # Para manejo de errores, se trata de ejecutar esta parte del codigo, si su
 
         """
         #### Los datos se pueden conseguir de Oferta nacional, o de oferta inicial, quitar el comentario para tomar los datos de oferta inicial
-        file = open ("/home/pi/project/data/OfertaInicial (Alternativa)/files/matSdataO.txt","r") ## abrir el archivo para lectura ("r" (read))
+        file = open ("/home/pi/project/data/OfertaInicial(Alternativa)/files/matSdataO.txt","r") ## abrir el archivo para lectura ("r" (read))
         """
 
         placeHolder = file.read() ## Una variable, llamada placeHolder, la cual sera de tipo string, con la informacion del archivo de texto

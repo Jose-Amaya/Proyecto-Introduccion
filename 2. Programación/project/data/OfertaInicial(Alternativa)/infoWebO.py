@@ -1,6 +1,6 @@
 ## CHECK PATH
 path = "./files/" ## For windows (VS)
-## path = "/home/pi/project/data/OfertaInicial (Alternativa)/files/" ## For raspberry
+## path = "/home/pi/project/data/OfertaInicial(Alternativa)/files/" ## For raspberry
 
 # Este programa actualizara un archivo con los datos de las centrales
 from dataTranslateO import uhourCents ## Importar la funcion que dara la informacion sobre todas las centrales

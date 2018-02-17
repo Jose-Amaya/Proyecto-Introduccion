@@ -8,7 +8,7 @@ Se planean utilizar los datos de Despacho Nacional, pero si es necesario, se pue
 
 Una memoria SD, de al menos 8GB, y preferiblemente de clase 10, para el sistema operativo
 
-Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo [Raspbian (version Jessie)](https://www.raspberrypi.org/downloads/raspbian/),se necesita de [Python3.5](https://www.python.org/downloads/release/python-350/), y tener la [librería Pycurl](http://pycurl.io/) instalada, y para la página web, se necesita de el servidor HTTP [Apache](https://httpd.apache.org/download.cgi) y también se necesita de [PHP](http://php.net/downloads.php)
+Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo [Raspbian (version Jessie)](https://www.raspberrypi.org/downloads/raspbian/),se necesita de [Python3.5](https://www.python.org/downloads/release/python-350/), y tener la [librería Pycurl](http://pycurl.io/) instalada, y para la página web, se necesita de el servidor HTTP [Apache](https://httpd.apache.org/download.cgi) y también se necesita de el módulo de PHP para el servidor
 
 1. Instalar Raspbian:
 	1. Descargar [RASPBIAN STRETCH WITH DESKTOP](https://www.raspberrypi.org/downloads/raspbian/)
@@ -32,20 +32,31 @@ Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo
 	```
 		y ejecutar 3.1. denuevo
 
+4. Instalar el servidor HTTP Apache:
+	1. Abrir el terminal y ejecutar:
+	```
+	sudo apt-get install apache2 -y
+	```
 
+5. Instalar el módulo PHP:
+	1. Abrir el terminal y ejecutar:
+	```
+	sudo apt-get install php libapache2-mod-php -y
+	```
+
+Guias de referencia:
+*https://www.raspberrypi.org/documentation/remote-access/web-server/apache.md
 
 ## Ejecución
 
-Se ejecutarán matS.py (que actualiza el estado de cada led) y dataUpdater.py (que se encarga de correr los programas para actualizar la información) en paralelo, para configurar los programas para que corran al encender la Raspberry, se realizaron estos pasos:
+Se ejecutarán matS.py (que actualiza el estado de cada led), dataUpdater.py (que se encarga de correr las funciones para actualizar la información) y dataUpdaterO.py en paralelo, para configurar los programas para que corran al encender la Raspberry, se realizaron estos pasos:
 
 1. Abrir el terminal y ejecutar:
-
 ```
 sudo nano /lib/systemd/system/matS.service
 ```
 
 2. Escribir:
-
 ```
  [Unit]
  Description=MatS
@@ -53,15 +64,96 @@ sudo nano /lib/systemd/system/matS.service
 
  [Service]
  Type=idle
- ExecStart=/usr/bin/python3.5 /home/pi/sample.py
+ ExecStart=/usr/bin/python3.5 /home/pi/project/matS.py
+ Restart=always
+ RestartSec=5
 
  [Install]
  WantedBy=multi-user.target
- ```
+```
 
+3. Presionar en orden las teclas / combinaciones de teclas:
+```
+CTRL + X
+Y
+ENTER
+```
 
+1. Abrir el terminal y ejecutar:
+```
+sudo nano /lib/systemd/system/dataUpdater.service
+```
 
-Guía usada: https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/#systemd
+2. Escribir:
+```
+ [Unit]
+ Description=DataUpdater
+ After=network.target
+
+ [Service]
+ Type=idle
+ ExecStart=/usr/bin/python3.5 /home/pi/project/data/dataUpdater.py
+ Restart=always
+ RestartSec=5
+
+ [Install]
+ WantedBy=multi-user.target
+```
+
+3. Presionar en orden las teclas / combinaciones de teclas:
+```
+CTRL + X
+Y
+ENTER
+```
+
+1. Abrir el terminal y ejecutar:
+```
+sudo nano /lib/systemd/system/dataUpdaterO.service
+```
+
+2. Escribir:
+```
+ [Unit]
+ Description=DataUpdaterO
+ After=network.target
+
+ [Service]
+ Type=idle
+ ExecStart=/usr/bin/python3.5 /home/pi/project/data/OfertaInicial(Alternativa)/dataUpdaterO.py
+ Restart=always
+ RestartSec=5
+
+ [Install]
+ WantedBy=multi-user.target
+```
+
+3. Presionar en orden las teclas / combinaciones de teclas:
+```
+CTRL + X
+Y
+ENTER
+```
+
+1. En el terminal ejecutar ( una linea a la vez ):
+```
+sudo chmod 644 /lib/systemd/system/matS.service
+sudo chmod 644 /lib/systemd/system/dataUpdater.service
+sudo chmod 644 /lib/systemd/system/dataUpdaterO.service
+
+sudo systemctl daemon-reload
+
+sudo systemctl enable matS.service
+sudo systemctl enable dataUpdater.service
+sudo systemctl enable dataUpdaterO.service
+
+sudo reboot
+```
+
+Guias de referencia:
+*https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/#systemd
+*https://www.raspberrypi.org/documentation/linux/usage/systemd.md
+*https://www.freedesktop.org/software/systemd/man/systemd.service.html
 
 ## Información de los archivos
 
@@ -93,7 +185,7 @@ Se encarga de correr las funciones de los diferentes programas en ./data , así 
 
 se encarga de tomar la información descargada en ./files/downData.txt ; tiene diferentes funciones hechas para acceder mas facilmente a la informacion
 
-## OfertaInicial (Alternativa)
+## OfertaInicial(Alternativa)
 
 Si se desean usar los datos de Oferta inicial, y no los de Despacho nacional, se corre, de esta carpeta dataUpdaterO.py, y se actualiza matS.py
 

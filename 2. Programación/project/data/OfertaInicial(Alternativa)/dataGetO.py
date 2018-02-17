@@ -1,6 +1,6 @@
 ## CHECK PATH
 path = "./files/" ## For windows (VS)
-## path = "/home/pi/project/data/OfertaInicial (Alternativa)/files/" ## For raspberry
+## path = "/home/pi/project/data/OfertaInicial(Alternativa)/files/" ## For raspberry
 
 import datetime
 import time
