@@ -8,7 +8,7 @@ Se planean utilizar los datos de Despacho Nacional, pero si es necesario, se pue
 
 Una memoria SD, de al menos 8GB, y preferiblemente de clase 10, para el sistema operativo
 
-Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo [Raspbian -(version Jessie)](https://www.raspberrypi.org/downloads/raspbian/),se necesita de [Python3.5](https://www.python.org/downloads/release/python-350/), y tener la [librería Pycurl](http://pycurl.io/) instalada, y para la página web, se necesita de el servidor HTTP [Apache](https://httpd.apache.org/download.cgi) y de [PHP](http://php.net/downloads.php)
+Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo [Raspbian (version Jessie)](https://www.raspberrypi.org/downloads/raspbian/),se necesita de [Python3.5](https://www.python.org/downloads/release/python-350/), y tener la [librería Pycurl](http://pycurl.io/) instalada, y para la página web, se necesita de el servidor HTTP [Apache](https://httpd.apache.org/download.cgi) y también se necesita de [PHP](http://php.net/downloads.php)
 
 1. Instalar Raspbian:
 	1. Descargar [RASPBIAN STRETCH WITH DESKTOP](https://www.raspberrypi.org/downloads/raspbian/)
@@ -30,7 +30,7 @@ Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo
 	```
 	sudo apt-get install python-pip
 	```
-	y ejecutar 3.1. denuevo
+		y ejecutar 3.1. denuevo
 
 
 
