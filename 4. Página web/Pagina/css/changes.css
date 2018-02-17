@@ -1,0 +1,108 @@
+.jumbotron{
+    background-image: url(../img/e3t2.jpg);
+    background-color: #999;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    padding-top: 110px;
+    text-shadow: 0px 0.5px 5px #000000;
+    font-weight: 600;
+    position: relative;
+}
+
+.changes {
+   padding-bottom: 0px;
+}
+#mainbody {
+    background-color: #151515;
+   /* overflow: hidden; */
+}
+#logos {
+padding-right: 20px;
+}
+.scrolling {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.changing {
+ max-height: auto;
+}
+.demcar {
+    padding-left: 20px;
+    padding-right: 20px;
+    align-content: center;
+}
+#lastcar {
+    width: 50%;
+}
+#lastcar2 {
+    width: 34%;
+}
+/* 
+
+
+
+
+
+Added for scroll 
+
+
+
+
+
+*/
+
+/* Container DIV - automatically generated */
+.simply-scroll-container { 
+	position: relative;
+}
+
+/* Clip DIV - automatically generated */
+.simply-scroll-clip { 
+	position: relative;
+	overflow: hidden;
+}
+
+/* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+.simply-scroll-list { 
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+	
+.simply-scroll-list li img {
+	border: none;
+	display: block;
+}
+
+/* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+/* Container DIV */
+.simply-scroll { 
+	width: 576px;
+	height: 200px;
+	margin-bottom: 1em;
+}
+
+/* Clip DIV */
+.simply-scroll .simply-scroll-clip {
+	width: 576px;
+	height: 200px;
+}
+	
+/* Explicitly set height/width of each list item */	
+.simply-scroll .simply-scroll-list li {
+	float: left; /* Horizontal scroll only */
+	width: 290px;
+	height: 200px;
+}
