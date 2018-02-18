@@ -1,8 +1,8 @@
-# ConfiguraciÛn
+# Configuraci√≥n
 
-Para usar la p·gina con el servidor Apache, se requiere reemplazar archivos:
+Para usar la p√°gina con el servidor Apache, se requiere reemplazar archivos:
 
-1. Mover la carpeta html en /home/pi
+1. Mover la carpeta html a /home/pi
 
 2. Abrir el terminal y ejecutar:
 ```
@@ -11,4 +11,4 @@ sudo mv /home/pi/html /var/www
 ```
 ## Detalles
 
-La p·gina web usa Bootstrap framework, las librerÌas de javascript jQuery y Popper, y PHP
+La p√°gina web usa Bootstrap framework, las librer√≠as de javascript jQuery y Popper, y PHP
