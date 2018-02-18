@@ -20,7 +20,7 @@
 
     
     <?php 
-$file = fopen("infoWeb.txt","r"); # Se abre el archivo
+$file = fopen("/home/pi/project/data/files/infoWeb.txt","r"); # Se abre el archivo
 
 $JEPIRACHI115 = fgets($file);
 $FLORES = fgets($file);
@@ -181,29 +181,6 @@ echo("<p class=\"card-text\">No está en funcionamiento</p>");
 </div>
  
 
-
-
- 
-<div class="card col-xl-2 changing">
-<h1 class="card-header">T 5</h1>
-<div class="card-body">
-<h4 class="card-title">Termosierra</h4>
-<?php
-if ($TERMOSIERRAB > 0) {
-echo("<p class=\"card-text\">En funcionamiento</p>");
-echo("<p class=\"btn btn-primary\">" . $TERMOSIERRAB . " MWh </p>");
-}
-else {
-echo("<p class=\"card-text\">No está en funcionamiento</p>");
-}
-?>
-</div>
-</div>
- 
-
-
-
- 
 <div class="card col-xl-2 changing">
 <h1 class="card-header">T 6</h1>
 <div class="card-body">
@@ -219,15 +196,9 @@ echo("<p class=\"card-text\">No está en funcionamiento</p>");
 ?>
 </div>
 </div>
- 
-      </div>
-
-<div class="d-flex flex-row flex-nowrap card-deck card-columns demcar">
- 
     
-
- 
-<div class="card col-xl-2 changing">
+    
+    <div class="card col-xl-2 changing">
 <h1 class="card-header">T 7</h1>
 <div class="card-body">
 <h4 class="card-title">Termopaipa</h4>
@@ -243,7 +214,10 @@ echo("<p class=\"card-text\">No está en funcionamiento</p>");
 </div>
 </div>
  
+      </div>
 
+<div class="d-flex flex-row flex-nowrap card-deck card-columns demcar">
+ 
 
 
  
@@ -324,6 +298,24 @@ echo("<p class=\"card-text\">No está en funcionamiento</p>");
 </div>
  
 
+     
+<div class="card col-xl-2 changing">
+<h1 class="card-header">T 12</h1>
+<div class="card-body">
+<h4 class="card-title">Termosierra</h4>
+<?php
+if ($TERMOSIERRAB > 0) {
+echo("<p class=\"card-text\">En funcionamiento</p>");
+echo("<p class=\"btn btn-primary\">" . $TERMOSIERRAB . " MWh </p>");
+}
+else {
+echo("<p class=\"card-text\">No está en funcionamiento</p>");
+}
+?>
+</div>
+</div>
+ 
+    
  
 <div class="card col-xl-2 changing">
 <h1 class="card-header">H 1</h1>
