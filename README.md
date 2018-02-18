@@ -5,12 +5,12 @@ El proyecto consiste, en una estructura con un mapa de Colombia, el cuál tiene 
 ## Partes del proyecto
 
 Para el desarrollo del proyecto:
-1. Se editó el mapa para agregar la ubicacion de cada central, y las convenciones. [Carpeta](1.%20Diseño%20mapa/)
-2. Se creó un programa en python que corre en una [Raspberri pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/). [Carpeta](2.%20Programación/)
-3. Se diseño una PCB, para controlar los 47 LEDs, con solo 16 pines ( o menos ) de la raspberry pi. [Carpeta](3.%20PCB/)
-4. Se diseño una página web para mostrar los datos de generación de las centrales en un panel. [Carpeta](4.%20Página%20web/)
+1. Se editó el mapa para agregar la ubicacion de cada central, y las convenciones. [Abrir Carpeta](1.%20Diseño%20mapa/)
+2. Se creó un programa en python que corre en una [Raspberri pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/). [Abrir Carpeta](2.%20Programación/)
+3. Se diseño una PCB, para controlar los 47 LEDs, con solo 16 pines ( o menos ) de la raspberry pi. [Abrir Carpeta](3.%20PCB/)
+4. Se diseño una página web para mostrar los datos de generación de las centrales en un panel. [Abrir Carpeta](4.%20Página%20web/)
 5. Se diseño una estructura para contener todos los elementos.
-6. Se consiguio información sobre las centrales de xm.com.co [Archivo Centrales.xlsx](Centrales.xlsx)
+6. Se consiguio información sobre las centrales de xm.com.co [Abrir Archivo Centrales.xlsx](Centrales.xlsx)
 
 Visitar cada carpeta para obtener mas información
 [test](4.%20Página%20web/)
