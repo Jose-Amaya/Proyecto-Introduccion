@@ -1,15 +1,7 @@
 # Diseño del mapa
 
-## Archivos
+## [Mapa Original](www.google.com)
 
-### Colombia_300dpi
+## [Mapa con convenciones](www.google.com)
 
-Mapa de Colombia en alta resolución original
-
-### MAPA 2.0
-
-Mapa editado con convenciones
-
-### ÍNDICE
-
-Convenciones
+## [Convenciones](www.google.com)
