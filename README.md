@@ -11,3 +11,5 @@ Para el desarrollo del proyecto:
 4. Se diseño una página web para mostrar los datos de generación de las centrales en un panel.
 5. Se diseño una estructura para contener todos los elementos.
 6. Se consiguio información sobre las centrales de xm.com.co [Archivo Centrales.xlsx](Centrales.xlsx)
+
+Visitar cada carpeta para obtener mas información

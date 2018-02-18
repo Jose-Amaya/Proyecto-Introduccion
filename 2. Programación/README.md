@@ -4,11 +4,15 @@ Los archivos principales se encuentran en la carpeta "project", esta carpeta deb
 
 Se planean utilizar los datos de Despacho Nacional, pero si es necesario, se pueden utilizar los datos de Oferta inicial, para esto se cambia una linea de código en matS.py
 
+# Funcionamiento
+
+Cada script ( *.py ) se encuentra comentado, explicando el funcionamiento de manera detallada
+
 # Requisitos
 
 Una memoria SD, de al menos 8GB, y preferiblemente de clase 10, para el sistema operativo
 
-Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo [Raspbian (version Jessie)](https://www.raspberrypi.org/downloads/raspbian/),se necesita de [Python3.5](https://www.python.org/downloads/release/python-350/), y tener la [librería Pycurl](http://pycurl.io/) instalada, y para la página web, se necesita de el servidor HTTP [Apache](https://httpd.apache.org/download.cgi) y también se necesita de el módulo de PHP para el servidor
+Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo [Raspbian (version Jessie)](https://www.raspberrypi.org/downloads/raspbian/), se necesita de [Python3.5](https://www.python.org/downloads/release/python-350/), y tener la [librería Pycurl](http://pycurl.io/) instalada, y para la página web, se necesita del servidor HTTP [Apache](https://httpd.apache.org/download.cgi) y también se necesita de el módulo de PHP para el servidor
 
 1. Instalar Raspbian:
 	1. Descargar [RASPBIAN STRETCH WITH DESKTOP](https://www.raspberrypi.org/downloads/raspbian/)
@@ -79,7 +83,7 @@ Y
 ENTER
 ```
 
-4. Abrir el terminal y ejecutar:
+4. Ejecutar:
 ```
 sudo nano /lib/systemd/system/dataUpdater.service
 ```
@@ -107,7 +111,7 @@ Y
 ENTER
 ```
 
-7. Abrir el terminal y ejecutar:
+7. Ejecutar:
 ```
 sudo nano /lib/systemd/system/dataUpdaterO.service
 ```
