@@ -1,4 +1,4 @@
-|# Archivos
+# Archivos
 
 ## Orden de conexion
 
@@ -15,6 +15,10 @@ El diseño de la PCB
 ### tarjetaSchematic
 
 El esquema del circuito
+
+## EAGLE
+
+Archivos para el programa EAGLE de Autodesk
 
 ## Raspberry Pi
 

@@ -3,7 +3,7 @@
 path = "/home/pi/project/data/files/" ## direccion al archivo files, si la carpeta project se encuentra en /home/pi
 
 # Importar librerias necesarias para el funcionamiento
-import RPi.GPIO as GPIO ## Se importa la libreria RPi.GPIO, y se le da el nombre de GPIO para que sea de mas facil acceso (para llamar una funcion de la liberia se usara GPIO.funcion en vez de RPi.GPIO.funcion) esta libreria permite controlar la funcion y el estado de los pines de la raspbery
+import RPi.GPIO as GPIO ## Se importa la libreria RPi.GPIO, y se le da el nombre de GPIO para que sea de mas facil acceso (para llamar una funcion de la liberia se usara GPIO.funcion en vez de RPi.GPIO.funcion) esta libreria permite controlar la funcion y el estado de los pines de la raspbery (mirar 3.PCB/Raspberry Pi/pi3gpio.png)
 import time ## Libreria usada para hacer que el programa se pause por un tiempo especifico (usando la funcion sleep de la libreria ( time.sleep(tiempo en segundos) ))
 import ast ## Libreria usada para transformar el tipo de informacion que se obtiene del archivo de texto evaluandolo; este tipo es "string" o cadena; y se necesita una variable de tipo lista (o matriz) ( ast.literal_eval(string a evaluar) )
 
@@ -14,8 +14,8 @@ wt = 0.001 ## Una variable que representa el tiempo que una fila de leds va a es
 global matrix ## Definicion de la variable global matrix, la cual tendra la informacion de que leds tienen que estar encendidos
 matrix = [[0]*8 for x in range(0,8)] ## Se crea una matriz 8x8 de ceros (una lista, compuesta por 8 listas, compuestas cada una por 8 ceros)
 
-column = [18, 22, 24, 26, 32, 36, 38, 40] # Lista de los pines que van conectados a la PCB, 'BP1' -> 'BP8' ('P1' -> 'P8' Esquema PCB 'tarjeta.brd')
-row = [11, 7, 5, 3, 37, 35, 33, 31] # Lista de los pines que van conectados a la PCB, 'BN1' -> 'BN8' (Esquema PCB 'tarjeta.brd')
+column = [18, 22, 24, 26, 32, 36, 38, 40] # Lista de los pines que van conectados a la PCB, 'BP1' -> 'BP8' ('P1' -> 'P8' Esquema PCB)
+row = [11, 7, 5, 3, 37, 35, 33, 31] # Lista de los pines que van conectados a la PCB, 'BN1' -> 'BN8' (Esquema PCB)
 
 ## Configurar los pines column y row como salidas
 for i in row:
