@@ -15,4 +15,3 @@ Para el desarrollo del proyecto:
 6. Se consiguio información sobre las centrales de xm.com.co [Abrir Archivo Centrales.xlsx](6.%20Archivos/Centrales.xlsx)
 
 Visitar cada carpeta para obtener mas información
-[test](4.%20Página%20web/)
