@@ -1,15 +1,17 @@
-# Proyecto IntroducciÛn a la IngenierÌa: InformaciÛn sobre centrales de generaciÛn en Colombia
+# Proyecto Introducci√≥n a la Ingenier√≠a: Informaci√≥n sobre centrales de generaci√≥n en Colombia
 
-El proyecto consiste, en una estructura con un mapa de Colombia, el cu·l tiene en cada punto donde hay una de las 47 centrales escogidas, un LED, el cu·l estar· encendido si la central en ese punto se encuentra en funcionamiento, y apagado si la central no est· en funcionamiento, el color del LED depende del tipo de generaciÛn que se da en la central, adem·s, un panel en donde se muestra la informaciÛn de generaciÛn para cada central.
+El proyecto consiste, en una estructura con un mapa de Colombia, el cu√°l tiene en cada punto donde hay una de las 47 centrales escogidas, un LED, el cu√°l estar√° encendido si la central en ese punto se encuentra en funcionamiento, y apagado si la central no est√° en funcionamiento, el color del LED depende del tipo de generaci√≥n que se da en la central, adem√°s, un panel en donde se muestra la informaci√≥n de generaci√≥n para cada central.
 
 ## Partes del proyecto
 
 Para el desarrollo del proyecto:
-1. Se editÛ el mapa para agregar la ubicacion de cada central, y las convenciones.
-2. Se creÛ un programa en python que corre en una [Raspberri pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/).
-3. Se diseÒo una PCB, para controlar los 47 LEDs, con solo 16 pines ( o menos ) de la raspberry pi.
-4. Se diseÒo una p·gina web para mostrar los datos de generaciÛn de las centrales en un panel.
-5. Se diseÒo una estructura para contener todos los elementos.
-6. Se consiguio informaciÛn sobre las centrales de xm.com.co [Archivo Centrales.xlsx](Centrales.xlsx)
+1. Se edit√≥ el mapa para agregar la ubicacion de cada central, y las convenciones.
+2. Se cre√≥ un programa en python que corre en una [Raspberri pi 3](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/).
+3. Se dise√±o una PCB, para controlar los 47 LEDs, con solo 16 pines ( o menos ) de la raspberry pi.
+4. Se dise√±o una p√°gina web para mostrar los datos de generaci√≥n de las centrales en un panel.
+5. Se dise√±o una estructura para contener todos los elementos.
+6. Se consiguio informaci√≥n sobre las centrales de xm.com.co [Archivo Centrales.xlsx](Centrales.xlsx)
 
-Visitar cada carpeta para obtener mas informaciÛn
+Visitar cada carpeta para obtener mas informaci√≥n
+
+4.%20P√°gina%20web
