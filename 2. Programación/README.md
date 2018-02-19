@@ -1,4 +1,4 @@
-# Proyecto-Introduccion
+# Programación
 
 Los archivos principales se encuentran en la carpeta "project", esta carpeta debe ir en el directorio 'home/pi' de la Raspberry Pi
 
