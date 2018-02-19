@@ -1,6 +1,6 @@
 # Proyecto Introducción a la Ingeniería: Información sobre centrales de generación en Colombia
 
-El proyecto consiste, en una estructura con un mapa de Colombia, el cuál tiene en cada punto donde hay una de las 47 centrales escogidas, un LED, el cuál estará encendido si la central en ese punto se encuentra en funcionamiento, y apagado si la central no está en funcionamiento, el color del LED depende del tipo de generación que se da en la central, además, un panel en donde se muestra la información de generación para cada central.
+El proyecto consiste, en una estructura con un mapa de Colombia, el cuál tiene en cada punto donde hay una de las 47 centrales escogidas, un LED, el cuál estará encendido si la central en ese punto se encuentra en funcionamiento, y apagado si la central no está en funcionamiento, el color del LED depende del tipo de generación que se da en la central, y además hay un panel en donde se muestra la información de generación para cada central.
 
 ![Grupo Del Proyecto](6.%20Archivos/Foto.jpg)
 
