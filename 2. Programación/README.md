@@ -12,7 +12,7 @@ Cada script ( *.py ) se encuentra comentado, explicando el funcionamiento de man
 
 Una memoria SD, de al menos 8GB, y preferiblemente de clase 10, para el sistema operativo
 
-Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo [Raspbian (version Jessie)](https://www.raspberrypi.org/downloads/raspbian/), se necesita de [Python3.5](https://www.python.org/downloads/release/python-350/), y tener la [librería Pycurl](http://pycurl.io/) instalada, y para la página web, se necesita del servidor HTTP [Apache](https://httpd.apache.org/download.cgi) y también se necesita de el módulo de PHP para el servidor
+Para correr los programas en la Raspberry pi 3, Se necesita el sistema operativo [Raspbian (version Jessie)](https://www.raspberrypi.org/downloads/raspbian/), se necesita de [Python3.5](https://www.python.org/downloads/release/python-350/), y tener la [librería Pycurl](http://pycurl.io/) instalada, y para la página web, se necesita del servidor HTTP [Apache](https://httpd.apache.org/download.cgi) y también se necesita del módulo de PHP para el servidor
 
 1. Instalar Raspbian:
 	1. Descargar [RASPBIAN STRETCH WITH DESKTOP](https://www.raspberrypi.org/downloads/raspbian/)
