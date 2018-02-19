@@ -171,7 +171,7 @@ Programa que actualiza la matriz de LEDs basado en los datos que se encuentran e
 
 ### infoWeb.py
 
-Programa que con una función para actualizar el archivo ./data/files/infoWeb.txt ; en cada linea se muestra la informacion de la central para la hora actual, el orden es el mismo que en el archivo Centrales.xlsx
+Programa con una función para actualizar el archivo ./data/files/infoWeb.txt; en cada linea se muestra la informacion de la central para la hora actual, el orden es el mismo que en el archivo Centrales.xlsx (E1, T1 -> T11, H1 -> H35)
 
 ### dataUpdater.py
 
@@ -187,4 +187,4 @@ Si se desean usar los datos de Oferta inicial, y no los de Despacho nacional, se
 
 # PATH
 
-Al pasar a la raspberry pi, actualizar los archivos dataGet , dataTranslate , infoWeb y matS con la direccion de la carpeta
+Al pasar a la raspberry pi la carpeta 'project', revisar en los archivos dataGet , dataTranslate , infoWeb y matS, la variable Path al inicio del programa, esta debe ser igual a la carpeta donde se encuentra la carpeta project
