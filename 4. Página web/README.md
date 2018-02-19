@@ -11,4 +11,4 @@ sudo mv /home/pi/html /var/www
 ```
 ## Detalles
 
-La página web usa Bootstrap framework, las librerías de javascript jQuery y Popper, y PHP
+La página web usa [Bootstrap framework](https://getbootstrap.com/), las librerías de javascript [jQuery](https://jquery.com/) y [Popper](https://popper.js.org/), y [PHP](http://www.php.net/)
