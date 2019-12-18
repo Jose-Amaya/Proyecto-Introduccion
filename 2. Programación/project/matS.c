@@ -61,8 +61,6 @@ void setup_io();
 const uint8_t r[8] = {17, 4, 3, 2, 26, 19, 13, 6}; // GPIO rows
 const uint8_t c[8] = {24, 25, 8, 7, 12, 16, 20, 21}; // GPIO columns
 
-//uint32_t rMask = 1 << r[0] | 1 << r[1] | 1 << r[2] | 1 << r[3] | 1 << r[4] | 1 << r[5] | 1 << r[6] | 1 << r[7];
-//uint32_t cMask = 1 << c[0] | 1 << c[1] | 1 << c[2] | 1 << c[3] | 1 << c[4] | 1 << c[5] | 1 << c[6] | 1 << c[7];
 uint32_t rMask;
 uint32_t cMask;
 
@@ -115,8 +113,7 @@ void *updateData(void *ptr){
    while(1){
 		FILE * matrixData;
 		
-		#ifdef ofertaNacional
-			matrixData = fopen("./data/files/matSdata.bin", "r");
+		matrixData = fopen("./data/files/matSdata.bin", "r");
 		
 		uint8_t buffer[56];
 		int dataRead = fread(buffer, 1, 56, matrixData);
