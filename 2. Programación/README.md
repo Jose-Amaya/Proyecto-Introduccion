@@ -1,4 +1,4 @@
-# Programación (Python 5.3)
+# Programación (Python 3.5)
 
 Los archivos principales se encuentran en la carpeta "project", esta carpeta debe ir en el directorio 'home/pi' de la Raspberry Pi
 
