@@ -3,8 +3,9 @@ deployed = False
 import RPi.GPIO as GPIO
 import time
 import threading
+import dataTranslate
 
-CentralesOrder = ['E1','T1','T2','T3','T4','T5','T6','T7','T8','T9','T10','T11','H1','H2','H3','H4','H5','H6','H7','H8','H9','H10','H11','H12','H13','H14','H15','H16','H17','H18','H19','H20','H21','H22','H23','H24','H25','H26','H27','H28','H29','H30','H31','H32','H33','H34','H35'];
+CentralesOrder = dataTranslate.CentralesOrder
 
 GPIO.setmode(GPIO.BOARD)
 
