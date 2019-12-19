@@ -74,7 +74,13 @@ def parseData():
     dataOI = DNOI[1]
 
     if dataDN.find("ERROR DATAGET") != -1 or dataOI.find("ERROR DATAGET") != -1:
-        return [False,[dataDN,dataOI]] # Means there was an error
+        toReturn = [None, None]
+        if dataDN.find("ERROR DATAGET") != -1:
+            toReturn[0] = dataDN
+        if dataOI.find("ERROR DATAGET") != -1:
+            toReturn[1] = dataOI
+
+        return [False,toReturn] # Means there was an error
 
     for i in range(0, len(Centrales)):
 
