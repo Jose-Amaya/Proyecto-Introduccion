@@ -2,11 +2,11 @@ HTTP/1.1 200 OK
 Cache-Control: private,max-age=0
 Content-Length: 70638
 Content-Type: text/plain
-Expires: Wed, 04 Dec 2019 00:40:49 GMT
+Expires: Wed, 04 Dec 2019 04:11:50 GMT
 Last-Modified: Tue, 17 Dec 2019 15:23:14 GMT
 ETag: "{499BF3B3-8DB3-47F6-92DB-5C26BE615548},4"
 Server: Microsoft-IIS/7.5
-SPRequestGuid: 432a3b5f-7e2c-441e-a884-079434523ef4
+SPRequestGuid: 2c0ca6f5-f67c-42a8-b71d-7c7a464abc6b
 X-SharePointHealthScore: 0
 ResourceTag: rt:499BF3B3-8DB3-47F6-92DB-5C26BE615548@00000000004
 Public-Extension: http://schemas.microsoft.com/repl-2
@@ -14,7 +14,7 @@ X-Powered-By: ASP.NET
 MicrosoftSharePointTeamServices: 14.0.0.7102
 X-MS-InvokeApp: 1; RequireReadOnly
 Server: WFE67
-Date: Thu, 19 Dec 2019 00:40:49 GMT
+Date: Thu, 19 Dec 2019 04:11:50 GMT
 
 Ofertas Iniciales para: 2019-12-18
 

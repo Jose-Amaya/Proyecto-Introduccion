@@ -99,3 +99,4 @@ ENV/
 
 # mypy
 .mypy_cache/
+/.vs/Proyecto-Introduccion/v16/Browse.VC.opendb
