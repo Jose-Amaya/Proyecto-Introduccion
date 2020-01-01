@@ -65,8 +65,12 @@ def exportMatrix():
 
 def exportJson():
     jsonData = open(path + "data.json", 'w')
-    jsonCentrales = list(map(lambda x: vars(x), Centrales))
-    json.dump(jsonCentrales,jsonData,indent=2)
+    
+    jsonCentrales = {}
+    for i in Centrales:
+        jsonCentrales.update({i.id:vars(i)});
+
+    json.dump(jsonCentrales, jsonData, indent=2)
     jsonData.close()
 
 def updateToHour():
