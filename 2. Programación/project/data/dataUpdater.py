@@ -70,6 +70,8 @@ def exportJson():
     for i in Centrales:
         jsonCentrales.update({i.id:vars(i)});
 
+    jsonCentrales.update({"time":str(datetime.datetime.today())})
+
     json.dump(jsonCentrales, jsonData, indent=2)
     jsonData.close()
 
