@@ -80,7 +80,7 @@ def parseData():
         if dataOI.find("ERROR DATAGET") != -1:
             toReturn[1] = dataOI
 
-        return [False,toReturn] # Means there was an error
+        return([False,toReturn]) # Means there was an error
 
     for i in range(0, len(Centrales)):
 
