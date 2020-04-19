@@ -1,3 +1,5 @@
+# Downloads and returns the data from the website, if it fails it returns an error string
+
 import os
 
 saveData = True
@@ -25,8 +27,8 @@ def performRequest(page, requestUri, textEncoding):
     status = response.status
 
     if status != 200: # If the status is not 200 (OK)
-        return("ERROR DATAGET: Status %d" % status)
-
+        return("ERROR DATAGET: HTTP Status %d" % status)
+    
     try:
         response = response.read()
     except:
@@ -40,13 +42,13 @@ def performRequest(page, requestUri, textEncoding):
     return(response)
 
 
-# Save the file checking for errors
+# Save the file
 def saveFile(data, filename, fileEncoding):
     file = open(path + filename, "w", encoding = fileEncoding, newline='') # Abrir archivo de texto para escritura
     file.write(data) # Escribir la informacion en el archivo
     file.close()
 
-## getData function, returns downloaded data without parsing
+# Returns downloaded data (without parsing)
 def getData():
 
     now = datetime.date.today() ## Variable 'ahora', objeto, con la informacion sobre dia y hora
