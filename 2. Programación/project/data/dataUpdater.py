@@ -96,7 +96,7 @@ updateToDay()
 
 # start
 # it doesn't update if the month changes but the day doesnt, but that's not expected to happen
-# will look into a better way of doing this
+# will probably look into a better way of doing this
 while True:
     if datetime.date.today().day != cDay:
         updateToDay()
